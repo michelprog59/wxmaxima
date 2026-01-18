@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-25 07:59+0200\n"
-"PO-Revision-Date: 2026-01-11 13:21+0100\n"
+"PO-Revision-Date: 2026-01-18 12:29+0100\n"
 "Last-Translator: Michel Gosse <michel.gosse@free.fr>\n"
 "Language-Team: francais <fr@li.org>\n"
 "Language: fr\n"
@@ -116,7 +116,7 @@ msgstr "Polynôme &caractéristique…"
 
 #: ../../src/wxMaximaFrame.cpp:990
 msgid "&Clear Memory"
-msgstr "Effa&cer la mémoire"
+msgstr "Lib&érer la mémoire"
 
 #: ../../src/wxMaximaFrame.cpp:1583
 msgid "&Combine Factorials"
@@ -938,7 +938,7 @@ msgstr ""
 
 #: ../../src/wxMaximaFrame.cpp:1948
 msgid "Build &Info"
-msgstr "Compilation & Informations"
+msgstr "Informations sur la compilation"
 
 #: ../../src/wxMaxima.cpp:7275
 msgid "Byte:"
@@ -2296,7 +2296,7 @@ msgstr "Idem, en incluant le dénominateur"
 
 #: ../../src/Worksheet.cpp:1715 ../../src/wxMaximaFrame.cpp:944
 msgid "Divide Cell"
-msgstr "Partager la cellule"
+msgstr "Diviser la cellule"
 
 #: ../../src/wxMaximaFrame.cpp:1498
 msgid "Divide numbers or polynomials"
@@ -2637,7 +2637,7 @@ msgstr "Evaluer les cellules au-dessus\tCtrl+Shift+P"
 #: ../../src/Worksheet.cpp:1402 ../../src/Worksheet.cpp:1676
 #: ../../src/wxMaximaFrame.cpp:876
 msgid "Evaluate Cells Below"
-msgstr "Évaluer les cellules ci-dessous"
+msgstr "Évaluer les cellules au dessous"
 
 #: ../../src/Worksheet.cpp:1451 ../../src/Worksheet.cpp:1756
 #: ../../src/Worksheet.cpp:1890
@@ -2770,7 +2770,7 @@ msgstr "Développer une expression trigonométrique"
 
 #: ../../src/wxMaximaFrame.cpp:1788
 msgid "Expect numbers harder to be complex"
-msgstr "Attente de nombres plus difficiles pour être complexes"
+msgstr "Considérer les nombres comme complexes"
 
 #: ../../src/wxMaximaFrame.cpp:1789
 msgid "Expect variables to contain complex numbers"
@@ -3092,7 +3092,7 @@ msgstr "Chercher\tCtrl+F"
 
 #: ../../src/wxMaximaFrame.cpp:1468
 msgid "Find &Limit..."
-msgstr "Rechercher &Limiter…"
+msgstr "Rechercher une &Limite…"
 
 #: ../../src/wxMaximaFrame.cpp:1470
 msgid "Find Minimum..."
@@ -4070,7 +4070,7 @@ msgstr "Transformée de Laplace inverse..."
 
 #: ../../src/wxMaximaFrame.cpp:832
 msgid "Invert worksheet brightness"
-msgstr "Inverser la luminosité du notebook"
+msgstr "Basculer mode clair/sombre"
 
 #: ../../src/wxMaxima.cpp:7338
 msgid "Is Char 1 greater than Char2, if case is ignored?"
@@ -4228,7 +4228,7 @@ msgstr "L[inf] Norme (complexe)"
 
 #: ../../src/wxMaximaFrame.cpp:1408
 msgid "L[inf] Norm (real)"
-msgstr "L[inf] Norme (réekke)"
+msgstr "L[inf] Norme (réelle)"
 
 #: ../../src/wxMaximaFrame.cpp:1025
 msgid "Labels"
@@ -5959,7 +5959,7 @@ msgstr "Rapport de bogue"
 
 #: ../../src/wxMaximaFrame.cpp:996
 msgid "Reset option variables"
-msgstr "Réinitialiser les variables pour les options"
+msgstr "Réinitialiser les variables des options"
 
 #: ../../src/ToolBar.cpp:229 ../../src/wxMaximaFrame.cpp:974
 msgid "Restart Maxima"
@@ -6562,7 +6562,7 @@ msgstr "Afficher les équations sous leur forme linéaire"
 
 #: ../../src/wxMaximaFrame.cpp:1073
 msgid "Show function &Definition..."
-msgstr "Afficher la fonction &Définition..."
+msgstr "Montrer la &Définition de la fonction..."
 
 #: ../../src/wxMaximaFrame.cpp:896
 msgid "Show function template"
@@ -7344,7 +7344,7 @@ msgstr "Le fichier image \"%s\" est introuvable."
 
 #: ../../src/wxMaximaFrame.cpp:718
 msgid "The integrated help browser"
-msgstr "Le navigateur d’aide intégré"
+msgstr "Navigateur d’aide intégré"
 
 #: ../../src/wxMaxima.cpp:9591
 msgid "The list of variables contained in each matrix row"
@@ -7854,7 +7854,7 @@ msgstr ""
 
 #: ../../src/wxMaximaFrame.cpp:1007
 msgid "Undefine"
-msgstr "Annuler la définition"
+msgstr "Supprimer ou effacer une définition"
 
 #: ../../src/ToolBar.cpp:191
 msgid "Undo"
@@ -7874,7 +7874,7 @@ msgstr "Annuler la dernière modification"
 
 #: ../../src/wxMaximaFrame.cpp:924
 msgid "Unfold All\tCtrl+Alt+]"
-msgstr "Déplier tout\tCtrl+Alt+]"
+msgstr "Tout déplier\tCtrl+Alt+]"
 
 #: ../../src/wxMaximaFrame.cpp:925
 msgid "Unfold all folded sections"
