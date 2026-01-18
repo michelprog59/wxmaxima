@@ -8,7 +8,8 @@
 #cmakedefine NANOSVG_CAUSES_NO_LINK_ERROR
 #cmakedefine WXMAXIMA_GIT_SHORT_HASH "@WXMAXIMA_GIT_SHORT_HASH@"
 
-#if __cplusplus >= 202002L
+#include <thread>
+#ifdef __cpp_lib_jthread
     #define jthread std::jthread
 #else
     #define jthread std::thread
