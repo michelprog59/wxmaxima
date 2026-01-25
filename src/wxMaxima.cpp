@@ -2230,7 +2230,6 @@ TextCell *wxMaxima::DoRawConsoleAppend(wxString s, CellType type,
     }
 
     wxStringTokenizer tokens(s, wxS("\n"));
-    int count = 0;
     CellListBuilder<Cell> tree;
     while (tokens.HasMoreTokens()) {
       wxString token = tokens.GetNextToken();
@@ -2255,7 +2254,6 @@ TextCell *wxMaxima::DoRawConsoleAppend(wxString s, CellType type,
         if (breakLine)
           tree.GetLastAppended()->ForceBreakLine(true);
       }
-      count++;
     }
     GetWorksheet()->InsertLine(std::move(tree), true);
   }
@@ -5822,8 +5820,9 @@ void wxMaxima::ReadStdErr() {
 
     o = wxS("Message from maxima's stderr stream: ") + o;
 
-    if ((o != wxS("Message from maxima's stderr stream: End of animation "
-                  "sequence")) &&
+    if ((o != wxS("Message from maxima's stderr stream: End of animation sequence")) &&
+        (o != wxS("Message from maxima's stderr stream: Fontconfig warning: using without calling FcInit()")) &&  // harmless warning, which may occur with Gnuplot 6 and fontconfig
+        (o != wxS("Message from maxima's stderr stream: QSocketNotifier: Can only be used with threads started with QThread")) &&  // Maybe related to Gnuplot / Wayland?
         !o.Contains("frames in animation sequence") &&
         (o_trimmed != wxEmptyString) && (o.Length() > 1)) {
       DoRawConsoleAppend(o, MC_TYPE_ERROR);
