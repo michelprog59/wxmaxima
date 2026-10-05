@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['n1_0',['N1',['../namespaceN1.html',1,'']]]
+  ['detail_0',['detail',['../namespacedetail.html',1,'']]],
+  ['docstring_1',['docstring',['../namespacedocstring.html',1,'']]],
+  ['dtoa_5fimpl_2',['dtoa_impl',['../namespacedetail_1_1dtoa__impl.html',1,'detail']]]
 ];

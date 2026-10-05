@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>wxMaxima: src/Worksheet.cpp File Reference</title>
+<title>wxMaxima: src/worksheet/Worksheet.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,12 +69,11 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_77e3d816d0344befe5c019023fa466b6.html">worksheet</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Worksheet.cpp File Reference</div></div>
 </div><!--header-->
@@ -83,6 +82,8 @@ $(function() {
 <p>This file defines the class <a class="el" href="classWorksheet.html" title="The canvas that contains the spreadsheet the whole program is about.">Worksheet</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Worksheet_8h_source.html">Worksheet.h</a>&quot;</code><br />
+<code>#include &quot;BTextCtrl.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="WorksheetSizeMath_8h_source.html">WorksheetSizeMath.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AnimationCell_8h_source.html">cells/AnimationCell.h</a>&quot;</code><br />
 <code>#include &quot;graphical_io/BitmapOut.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="CellList_8h_source.html">cells/CellList.h</a>&quot;</code><br />
@@ -90,10 +91,18 @@ $(function() {
 <code>#include &quot;graphical_io/EMFout.h&quot;</code><br />
 <code>#include &quot;cells/ImgCell.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="MarkDown_8h_source.html">MarkDown.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="UrlDetection_8h_source.html">UrlDetection.h</a>&quot;</code><br />
 <code>#include &quot;dialogs/MaxSizeChooser.h&quot;</code><br />
 <code>#include &quot;dialogs/ResolutionChooser.h&quot;</code><br />
+<code>#include &quot;dialogs/MatrixViewer.h&quot;</code><br />
+<code>#include &quot;cells/MatrCell.h&quot;</code><br />
+<code>#include &lt;wx/numformatter.h&gt;</code><br />
 <code>#include &quot;graphical_io/SVGout.h&quot;</code><br />
 <code>#include &quot;Version.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="Compat_8h_source.html">Compat.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="WorksheetContextMenu_8h_source.html">WorksheetContextMenu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="WorksheetEvalQueue_8h_source.html">WorksheetEvalQueue.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="WorksheetExport_8h_source.html">WorksheetExport.h</a>&quot;</code><br />
 <code>#include &quot;WXMformat.h&quot;</code><br />
 <code>#include &quot;levenshtein/levenshtein.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="wxMaxima_8h_source.html">wxMaxima.h</a>&quot;</code><br />
@@ -101,11 +110,15 @@ $(function() {
 <code>#include &quot;<a class="el" href="ArtProvider_8h_source.html">ArtProvider.h</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;wx/caret.h&gt;</code><br />
 <code>#include &lt;wx/clipbrd.h&gt;</code><br />
+<code>#include &lt;wx/utils.h&gt;</code><br />
 <code>#include &lt;wx/config.h&gt;</code><br />
 <code>#include &lt;wx/dcbuffer.h&gt;</code><br />
 <code>#include &lt;wx/dcgraph.h&gt;</code><br />
@@ -129,19 +142,8 @@ $(function() {
 <code>#include &lt;wx/xml/xml.h&gt;</code><br />
 <code>#include &lt;wx/zipstrm.h&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for Worksheet.cpp:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Worksheet_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<code>#include &lt;wx/bmpbndl.h&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a8fb42edf7cd9958380c1ec18c07e0479"><td class="memItemLeft" align="right" valign="top"><a id="a8fb42edf7cd9958380c1ec18c07e0479" name="a8fb42edf7cd9958380c1ec18c07e0479"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>WORKING_DC_CLEAR</b>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a8fb42edf7cd9958380c1ec18c07e0479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a52b4a06cfe1dca8e5f422bf956b0487e"><td class="memItemLeft" align="right" valign="top"><a id="a52b4a06cfe1dca8e5f422bf956b0487e" name="a52b4a06cfe1dca8e5f422bf956b0487e"></a>

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['cell_0',['cell',['../structCellList_1_1TornOut.html#a1a59905f41c54f5cd34e20855efa2fe6',1,'CellList::TornOut']]],
-  ['cellowner_1',['cellOwner',['../structCellList_1_1TornOut.html#aaec5379f95aa617f78f247c870bda10c',1,'CellList::TornOut']]],
-  ['classvar_2',['classVar',['../classpyexample_1_1PyClass.html#abd17aff54e5b0ca194020c796c733546',1,'pyexample::PyClass']]]
+  ['base_0',['base',['../structVehicle.html#ad7970f528d429f6fc1725173e93a77c2',1,'Vehicle::base()'],['../structCar.html#ab8ff28306286da5a8b14fa9bdccaafaa',1,'Car::base()'],['../structTruck.html#ad0ac321609dda1a6c552488b05ec7ac8',1,'Truck::base()']]],
+  ['baseurl_1',['baseUrl',['../structAiCustomProviderConfig.html#ac21658fa5a019e655c48f20e5d096fc1',1,'AiCustomProviderConfig']]],
+  ['bitmap_2',['bitmap',['../structClipboardContents.html#a2c06cc77cc5b3154264dd74b0df66a26',1,'ClipboardContents']]],
+  ['byte_3',['byte',['../classdetail_1_1parse__error.html#a5bce7d135aa3a38d1d3f4ed7bf8615e1',1,'detail::parse_error']]]
 ];

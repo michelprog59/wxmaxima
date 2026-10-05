@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['priority_0',['Priority',['../classBackgroundTask.html#a217da7631d4231f559cbad8f0e7e1566',1,'BackgroundTask']]]
+  ['loadfailurekind_0',['LoadFailureKind',['../classImage.html#aa66fcc260d334a93ab2186636f78fc5b',1,'Image']]]
 ];

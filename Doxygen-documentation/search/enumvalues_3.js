@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['generalfile_0',['generalfile',['../classAutoComplete.html#a6225a91b46c0459755a62de137620b29a5d27d54eac21bd6060c332d95314b445',1,'AutoComplete']]],
-  ['gval1_1',['GVal1',['../autolink_8cpp.html#a656d63cf384d2a6f23c2c18523a7bc5ea0f016f49e4f3bcd072319b9d68bc927d',1,'autolink.cpp']]],
-  ['gval2_2',['GVal2',['../autolink_8cpp.html#a656d63cf384d2a6f23c2c18523a7bc5ea811876e2eea5c16ae0594a95d98fbd55',1,'autolink.cpp']]]
+  ['dataunavailable_0',['DataUnavailable',['../classImage.html#aa66fcc260d334a93ab2186636f78fc5bae46c3285d7872de9634eb0640bfb0870',1,'Image']]],
+  ['debugging_1',['debugging',['../classStatusBar.html#af1235c09bed081ebb46dbd8b264f5c96a4420d8cdc87e59da070dc288d199b1b3',1,'StatusBar']]],
+  ['decodefailed_2',['DecodeFailed',['../classImage.html#aa66fcc260d334a93ab2186636f78fc5ba5f73b4d4c9b43e90d8c15847d54575e6',1,'Image']]],
+  ['demofile_3',['demofile',['../classAutoComplete.html#a6225a91b46c0459755a62de137620b29a653d70d312cae37be23d27c9526317f7',1,'AutoComplete']]],
+  ['discarded_4',['discarded',['../namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a94708897ec9db8647dfe695714c98e46',1,'detail']]],
+  ['disconnected_5',['DISCONNECTED',['../classMaxima.html#a01e208858ffeeb60e8a1787a580103c8ab062169d756676320e790966e56ad5ce',1,'Maxima']]]
 ];

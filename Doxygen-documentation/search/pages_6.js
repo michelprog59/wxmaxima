@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['manuel_20de_20l_27utilisateur_20de_20wxmaxima_0',['Manuel de l&apos;utilisateur de wxMaxima',['../md_info_wxmaxima_fr.html',1,'']]]
+  ['pag_5fexample_0',['pag_example',['../pag_example.html',1,'']]],
+  ['parser_20fuzzers_1',['Parser fuzzers',['../md_test_fuzz_README.html',1,'']]],
+  ['project_20instructions_2',['Project Instructions',['../md_AGENTS.html',1,'']]],
+  ['project_20instructions_20for_20claude_20code_3',['Project instructions for Claude Code',['../md_CLAUDE.html',1,'']]]
 ];

@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['temporary_0',['temporary',['../classConfiguration.html#ac7d8b1beccdf8f887368251c3e6d0d71ad2c1b48b8bb593a8ee707eff455cff9d',1,'Configuration']]],
-  ['tmplte_1',['tmplte',['../classAutoComplete.html#a6225a91b46c0459755a62de137620b29a537040456dba8d9d080cdb4bcd15bcad',1,'AutoComplete']]],
-  ['ts_5finvalid_2',['TS_INVALID',['../TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993a0cb8e35e6ba7c1291832043f36e1541c',1,'TextStyle.h']]],
-  ['tval1_3',['TVal1',['../classJavadoc__Test.html#ae37fd1cbf1af522674cbd33873b786a6a90f0d8d4f07a79342261fb1c191af72b',1,'Javadoc_Test::TVal1()'],['../classQTstyle__Test.html#a0525f798cda415a94fedeceb806d2c49a7929af91f99c319ffe2e49c9632bc3fa',1,'QTstyle_Test::TVal1()']]],
-  ['tval2_4',['TVal2',['../classJavadoc__Test.html#ae37fd1cbf1af522674cbd33873b786a6a5954e696a652f442d7255af4e0d35d61',1,'Javadoc_Test::TVal2()'],['../classQTstyle__Test.html#a0525f798cda415a94fedeceb806d2c49afff89db6859123549579806212d9fd80',1,'QTstyle_Test::TVal2()']]],
-  ['tval3_5',['TVal3',['../classJavadoc__Test.html#ae37fd1cbf1af522674cbd33873b786a6ab4a4dc16e1050c9604cf5c46a51e5a8e',1,'Javadoc_Test::TVal3()'],['../classQTstyle__Test.html#a0525f798cda415a94fedeceb806d2c49a8227cd0f0c1285d59ff14376fcd00f85',1,'QTstyle_Test::TVal3()']]]
+  ['name_5fseparator_0',['name_separator',['../classdetail_1_1lexer__base.html#add65fa7a85aa15052963809fbcc04540acc3c64f8ae08c00de1b33f19a4d2913a',1,'detail::lexer_base']]],
+  ['none_1',['None',['../classStatusBar.html#a7d2d4bad9c6f6a4eec714a4e884e6c34a6adf97f83acf6453d4a6a4b1070f3754',1,'StatusBar']]],
+  ['noopskipped_2',['NoOpSkipped',['../classWorksheetDocument.html#a597da4ddc26d35569b9346897dff3b72a773b1ab79b5aa284fc01d1ebb6e73c52',1,'WorksheetDocument']]],
+  ['null_3',['null',['../namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a37a6259cc0c1dae299a7866489dff0bd',1,'detail']]],
+  ['number_5ffloat_4',['number_float',['../namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632ad9966ecb59667235a57b4b999a649eef',1,'detail']]],
+  ['number_5finteger_5',['number_integer',['../namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a5763da164f8659d94a56e29df64b4bcc',1,'detail']]],
+  ['number_5funsigned_6',['number_unsigned',['../namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632adce7cc8ec29055c4158828921f2f265e',1,'detail']]],
+  ['numberofstyles_7',['NUMBEROFSTYLES',['../TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993a4ff5d935a79c3cd0c1e5d3a188645046',1,'TextStyle.h']]],
+  ['numberoftypes_8',['numberOfTypes',['../classAutoComplete.html#a6225a91b46c0459755a62de137620b29a83b932a902206b352f3795faf6f2d231',1,'AutoComplete']]]
 ];

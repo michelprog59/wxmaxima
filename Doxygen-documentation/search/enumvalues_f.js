@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['write_5ferror_0',['WRITE_ERROR',['../classMaxima.html#a01e208858ffeeb60e8a1787a580103c8a8711123903e89e9976049e9ec2a3ebec',1,'Maxima']]],
-  ['write_5fpending_1',['WRITE_PENDING',['../classMaxima.html#a01e208858ffeeb60e8a1787a580103c8a058e131729ff28b6a0442db28c93799f',1,'Maxima']]]
+  ['radiofromsuffix_0',['RadioFromSuffix',['../structMaximaMenuSyncRow.html#aab1861fb80f5b88b3b3c6f6abba42efaad12cd2cf7208bf79c5c29c75fa556ca7',1,'MaximaMenuSyncRow']]],
+  ['radiofromvalue_1',['RadioFromValue',['../structMaximaMenuSyncRow.html#aab1861fb80f5b88b3b3c6f6abba42efaa192c68770c5a798c26ae7c7d879744c0',1,'MaximaMenuSyncRow']]],
+  ['read_5fmisc_5ftext_2',['READ_MISC_TEXT',['../classMaxima.html#a01e208858ffeeb60e8a1787a580103c8abd3bebab2a70ef164bd89bf6d1320732',1,'Maxima']]],
+  ['read_5fpending_3',['READ_PENDING',['../classMaxima.html#a01e208858ffeeb60e8a1787a580103c8a46c15ee0530754feaced0ef045889f20',1,'Maxima']]],
+  ['replace_4',['replace',['../namespacedetail.html#abe7cfa1fd8fa706ff4392bff9d1a8298a9dde360102c103867bd2f45872f1129c',1,'detail']]],
+  ['running_5',['Running',['../classToolBar.html#a327b655c366e7932f751d2815cc629fca9c9bfa8603406d94a8f00a975a9c1f3c',1,'ToolBar']]]
 ];

@@ -1,16 +1,20 @@
 var searchData=
 [
-  ['filetosave_0',['FileToSave',['../classConfiguration_1_1FileToSave.html',1,'Configuration']]],
-  ['filtergenerator_1',['FilterGenerator',['../classCatch_1_1Generators_1_1FilterGenerator.html',1,'Catch::Generators']]],
-  ['findreplacedata_2',['FindReplaceData',['../classFindReplacePane_1_1FindReplaceData.html',1,'FindReplacePane']]],
-  ['findreplacedialog_3',['FindReplaceDialog',['../classFindReplaceDialog.html',1,'']]],
-  ['findreplacepane_4',['FindReplacePane',['../classFindReplacePane.html',1,'']]],
-  ['fixedvaluesgenerator_5',['FixedValuesGenerator',['../classCatch_1_1Generators_1_1FixedValuesGenerator.html',1,'Catch::Generators']]],
-  ['fn_5ftest_6',['Fn_Test',['../classFn__Test.html',1,'']]],
-  ['fontvariantcache_7',['FontVariantCache',['../classFontVariantCache.html',1,'']]],
-  ['formatsidebar_8',['FormatSidebar',['../classFormatSidebar.html',1,'']]],
-  ['fraccell_9',['FracCell',['../classFracCell.html',1,'']]],
-  ['fulltestcell_10',['FullTestCell',['../classFullTestCell.html',1,'']]],
-  ['funcell_11',['FunCell',['../classFunCell.html',1,'']]],
-  ['fuzzapp_12',['FuzzApp',['../classFuzzApp.html',1,'']]]
+  ['fakescrollhost_0',['FakeScrollHost',['../classFakeScrollHost.html',1,'']]],
+  ['file_5finput_5fadapter_1',['file_input_adapter',['../classdetail_1_1file__input__adapter.html',1,'detail']]],
+  ['filetosave_2',['FileToSave',['../classConfiguration_1_1FileToSave.html',1,'Configuration']]],
+  ['filtergenerator_3',['FilterGenerator',['../classCatch_1_1Generators_1_1FilterGenerator.html',1,'Catch::Generators']]],
+  ['findreplacedata_4',['FindReplaceData',['../classFindReplacePane_1_1FindReplaceData.html',1,'FindReplacePane']]],
+  ['findreplacedialog_5',['FindReplaceDialog',['../classFindReplaceDialog.html',1,'']]],
+  ['findreplacepane_6',['FindReplacePane',['../classFindReplacePane.html',1,'']]],
+  ['fixedvaluesgenerator_7',['FixedValuesGenerator',['../classCatch_1_1Generators_1_1FixedValuesGenerator.html',1,'Catch::Generators']]],
+  ['fn_5ftest_8',['Fn_Test',['../classFn__Test.html',1,'']]],
+  ['fontrenderabilitycache_9',['FontRenderabilityCache',['../classFontRenderabilityCache.html',1,'']]],
+  ['fontvariantcache_10',['FontVariantCache',['../classFontVariantCache.html',1,'']]],
+  ['formatsidebar_11',['FormatSidebar',['../classFormatSidebar.html',1,'']]],
+  ['fraccell_12',['FracCell',['../classFracCell.html',1,'']]],
+  ['from_5fjson_5ffn_13',['from_json_fn',['../structdetail_1_1from__json__fn.html',1,'detail']]],
+  ['fulltestcell_14',['FullTestCell',['../classFullTestCell.html',1,'']]],
+  ['funcell_15',['FunCell',['../classFunCell.html',1,'']]],
+  ['fuzzapp_16',['FuzzApp',['../classFuzzApp.html',1,'']]]
 ];

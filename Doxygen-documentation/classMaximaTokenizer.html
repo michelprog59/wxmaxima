@@ -75,6 +75,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a>  </div>
   <div class="headertitle"><div class="title">MaximaTokenizer Class Reference</div></div>
@@ -88,7 +89,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for MaximaTokenizer:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classMaximaTokenizer__coll__graph.svg" width="376" height="315"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classMaximaTokenizer__coll__graph.svg" width="220" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -137,12 +138,22 @@ static const wxString&#160;</td><td class="memItemRight" valign="bottom"><b>Unic
 <tr class="memitem:a4a47329ec7938d543d0174a974a5c566"><td class="memItemLeft" align="right" valign="top"><a id="a4a47329ec7938d543d0174a974a5c566" name="a4a47329ec7938d543d0174a974a5c566"></a>
 static const wxString&#160;</td><td class="memItemRight" valign="bottom"><b>Operators</b> ()</td></tr>
 <tr class="separator:a4a47329ec7938d543d0174a974a5c566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7083ea9e2abd63847239119d2dda493"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMaximaTokenizer.html#ac7083ea9e2abd63847239119d2dda493">IsHardcodedKeyword</a> (const wxString &amp;text)</td></tr>
+<tr class="memdesc:ac7083ea9e2abd63847239119d2dda493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this text one of the fake-function keywords (see m_hardcodedFunctions)?  <br /></td></tr>
+<tr class="separator:ac7083ea9e2abd63847239119d2dda493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a5ea04794aae8d3114cbbf9a42823bf36"><td class="memItemLeft" align="right" valign="top"><a id="a5ea04794aae8d3114cbbf9a42823bf36" name="a5ea04794aae8d3114cbbf9a42823bf36"></a>
-typedef std::unordered_map&lt; wxString, int, wxStringHash &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StringHash</b></td></tr>
-<tr class="separator:a5ea04794aae8d3114cbbf9a42823bf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814335b5bf73bb8bce7d0acada1e4551"><td class="memItemLeft" align="right" valign="top"><a id="a814335b5bf73bb8bce7d0acada1e4551" name="a814335b5bf73bb8bce7d0acada1e4551"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StringHash</b> = std::unordered_map&lt; wxString, int, wxStringHash &gt;</td></tr>
+<tr class="separator:a814335b5bf73bb8bce7d0acada1e4551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:afddb5eb5e3df76647039bfc4c1222e28"><td class="memItemLeft" align="right" valign="top"><a id="afddb5eb5e3df76647039bfc4c1222e28" name="afddb5eb5e3df76647039bfc4c1222e28"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureHardcodedFunctionsInitialized</b> ()</td></tr>
+<tr class="memdesc:afddb5eb5e3df76647039bfc4c1222e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates m_hardcodedFunctions on first use; safe to call repeatedly. <br /></td></tr>
+<tr class="separator:afddb5eb5e3df76647039bfc4c1222e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -151,7 +162,7 @@ TokenList&#160;</td><td class="memItemRight" valign="bottom"><b>m_tokens</b></td
 <tr class="memdesc:a9ed1633bfd4864c1ff2d5a69cda35074"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tokens the string is divided into. <br /></td></tr>
 <tr class="separator:a9ed1633bfd4864c1ff2d5a69cda35074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c05edb713b90fffff098aed7bb8393"><td class="memItemLeft" align="right" valign="top"><a id="ac2c05edb713b90fffff098aed7bb8393" name="ac2c05edb713b90fffff098aed7bb8393"></a>
-const <a class="el" href="classConfiguration.html">Configuration</a> *const&#160;</td><td class="memItemRight" valign="bottom"><b>m_configuration</b> = NULL</td></tr>
+const <a class="el" href="classConfiguration.html">Configuration</a> *const&#160;</td><td class="memItemRight" valign="bottom"><b>m_configuration</b> = nullptr</td></tr>
 <tr class="separator:ac2c05edb713b90fffff098aed7bb8393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
@@ -217,6 +228,36 @@ static const wxString&#160;</td><td class="memItemRight" valign="bottom"><b>m_ad
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac7083ea9e2abd63847239119d2dda493" name="ac7083ea9e2abd63847239119d2dda493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7083ea9e2abd63847239119d2dda493">&#9670;&#160;</a></span>IsHardcodedKeyword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool MaximaTokenizer::IsHardcodedKeyword </td>
+          <td>(</td>
+          <td class="paramtype">const wxString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is this text one of the fake-function keywords (see m_hardcodedFunctions)? </p>
+<p>These are tokenized as TS_CODE_FUNCTION &ndash; the same style as a genuine function call &ndash; but are <a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a> syntax, not identifiers a user could have defined: "for", "then", "do" and the like. Anything that walks tokens looking for user-definable names (e.g. a variable-renaming tool) needs to exclude these in addition to checking a token's text against the known builtin/command list, since most of them (unlike genuine builtin functions) are deliberately not real <a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a> function names and so don't appear in that list at all. </p>
 
 </div>
 </div>

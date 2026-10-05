@@ -171,6 +171,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTabChange</b> (wxBo
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStyleToEditChanged</b> (wxCommandEvent &amp;event)</td></tr>
 <tr class="memdesc:a2a091d60545ae1407dbde8781ac7306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called if the user changes the style that is to be edited. <br /></td></tr>
 <tr class="separator:a2a091d60545ae1407dbde8781ac7306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef870b86b28e98a7b901e3ab2292bbc2"><td class="memItemLeft" align="right" valign="top"><a id="aef870b86b28e98a7b901e3ab2292bbc2" name="aef870b86b28e98a7b901e3ab2292bbc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAppearanceChanged</b> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:aef870b86b28e98a7b901e3ab2292bbc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light / Dark / Follow-system appearance changed: re-point the style editor. <br /></td></tr>
+<tr class="separator:aef870b86b28e98a7b901e3ab2292bbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac87a1da42c1b7996d250f5959bbef56f"><td class="memItemLeft" align="right" valign="top"><a id="ac87a1da42c1b7996d250f5959bbef56f" name="ac87a1da42c1b7996d250f5959bbef56f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UsesvgChanged</b> (wxCommandEvent &amp;event)</td></tr>
 <tr class="memdesc:ac87a1da42c1b7996d250f5959bbef56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when the path to the maxima binary was changed. <br /></td></tr>
@@ -342,9 +346,9 @@ wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_usesvg</b><
 <tr class="memitem:a6d0fa80f5e697667d93ffbcf333c4032"><td class="memItemLeft" align="right" valign="top"><a id="a6d0fa80f5e697667d93ffbcf333c4032" name="a6d0fa80f5e697667d93ffbcf333c4032"></a>
 wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_antialiasLines</b></td></tr>
 <tr class="separator:a6d0fa80f5e697667d93ffbcf333c4032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a6b5814cc83006be2a48b8a1c3cac7"><td class="memItemLeft" align="right" valign="top"><a id="ae0a6b5814cc83006be2a48b8a1c3cac7" name="ae0a6b5814cc83006be2a48b8a1c3cac7"></a>
-wxSpinCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultFramerate</b></td></tr>
-<tr class="separator:ae0a6b5814cc83006be2a48b8a1c3cac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a54c8db85f1a1b4d5831b9b5c39ce5"><td class="memItemLeft" align="right" valign="top"><a id="aa7a54c8db85f1a1b4d5831b9b5c39ce5" name="aa7a54c8db85f1a1b4d5831b9b5c39ce5"></a>
+wxSpinCtrlDouble *&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultFramerate</b></td></tr>
+<tr class="separator:aa7a54c8db85f1a1b4d5831b9b5c39ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68554bd76bad5a0887791cdb4dd3ce85"><td class="memItemLeft" align="right" valign="top"><a id="a68554bd76bad5a0887791cdb4dd3ce85" name="a68554bd76bad5a0887791cdb4dd3ce85"></a>
 wxSpinCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultPlotWidth</b></td></tr>
 <tr class="separator:a68554bd76bad5a0887791cdb4dd3ce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,9 +379,6 @@ wxRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_displayA
 <tr class="memitem:a4f4916b4ea79ac98d654462f40c5d09d"><td class="memItemLeft" align="right" valign="top"><a id="a4f4916b4ea79ac98d654462f40c5d09d" name="a4f4916b4ea79ac98d654462f40c5d09d"></a>
 wxRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_linebreaksInLongNums</b></td></tr>
 <tr class="separator:a4f4916b4ea79ac98d654462f40c5d09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3484a55c9e89bd92da4c14a313b9c519"><td class="memItemLeft" align="right" valign="top"><a id="a3484a55c9e89bd92da4c14a313b9c519" name="a3484a55c9e89bd92da4c14a313b9c519"></a>
-wxSpinCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxClipbrdBitmapMegabytes</b></td></tr>
-<tr class="separator:a3484a55c9e89bd92da4c14a313b9c519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeee34ee5cedb6bd154ddb8234398770d"><td class="memItemLeft" align="right" valign="top"><a id="aeee34ee5cedb6bd154ddb8234398770d" name="aeee34ee5cedb6bd154ddb8234398770d"></a>
 wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_TeXExponentsAfterSubscript</b></td></tr>
 <tr class="memdesc:aeee34ee5cedb6bd154ddb8234398770d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classA.html">A</a> checkbox that asks if TeX should put the exponents above or after the subscripts. <br /></td></tr>
@@ -390,6 +391,10 @@ wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_usePartialF
 wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_exportContainsWXMX</b></td></tr>
 <tr class="memdesc:a1839f7952022968ff6936aeae17fd357"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classA.html">A</a> checkbox that asks if all newlines in text cells have to be passed to HTML. <br /></td></tr>
 <tr class="separator:a1839f7952022968ff6936aeae17fd357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe1336818d09995619dee5b82f1a2e8"><td class="memItemLeft" align="right" valign="top"><a id="a5fe1336818d09995619dee5b82f1a2e8" name="a5fe1336818d09995619dee5b82f1a2e8"></a>
+wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_htmlExportSelfContained</b></td></tr>
+<tr class="memdesc:a5fe1336818d09995619dee5b82f1a2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Embed images and the .wxmx into the exported .html file. <br /></td></tr>
+<tr class="separator:a5fe1336818d09995619dee5b82f1a2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7659c32d4f21aafaf835777db52319d4"><td class="memItemLeft" align="right" valign="top"><a id="a7659c32d4f21aafaf835777db52319d4" name="a7659c32d4f21aafaf835777db52319d4"></a>
 wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_printBrackets</b></td></tr>
 <tr class="separator:a7659c32d4f21aafaf835777db52319d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -411,6 +416,10 @@ wxChoice *&#160;</td><td class="memItemRight" valign="bottom"><b>m_autosubscript
 <tr class="memitem:a50c31248c2f5fcba163aa9f8551bf8ce"><td class="memItemLeft" align="right" valign="top"><a id="a50c31248c2f5fcba163aa9f8551bf8ce" name="a50c31248c2f5fcba163aa9f8551bf8ce"></a>
 wxRadioBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_layoutStrategy</b></td></tr>
 <tr class="separator:a50c31248c2f5fcba163aa9f8551bf8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3329f3282e27446d1c6a84a9cc5b5b8e"><td class="memItemLeft" align="right" valign="top"><a id="a3329f3282e27446d1c6a84a9cc5b5b8e" name="a3329f3282e27446d1c6a84a9cc5b5b8e"></a>
+wxRadioBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_oversizedMatrices</b></td></tr>
+<tr class="memdesc:a3329f3282e27446d1c6a84a9cc5b5b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to show a matrix too large for the window. <br /></td></tr>
+<tr class="separator:a3329f3282e27446d1c6a84a9cc5b5b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09843cd34889d53f256f2d348bf30a6c"><td class="memItemLeft" align="right" valign="top"><a id="a09843cd34889d53f256f2d348bf30a6c" name="a09843cd34889d53f256f2d348bf30a6c"></a>
 wxRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_enterEvaluates</b></td></tr>
 <tr class="separator:a09843cd34889d53f256f2d348bf30a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -438,6 +447,10 @@ wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoIndent<
 <tr class="memitem:a3d8d4cb32e34708231a951f8899f7c28"><td class="memItemLeft" align="right" valign="top"><a id="a3d8d4cb32e34708231a951f8899f7c28" name="a3d8d4cb32e34708231a951f8899f7c28"></a>
 wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_cursorJump</b></td></tr>
 <tr class="separator:a3d8d4cb32e34708231a951f8899f7c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a73053f6adc3dffe65db0c63bd422a"><td class="memItemLeft" align="right" valign="top"><a id="a81a73053f6adc3dffe65db0c63bd422a" name="a81a73053f6adc3dffe65db0c63bd422a"></a>
+wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_arrowKeysSkipOutput</b></td></tr>
+<tr class="memdesc:a81a73053f6adc3dffe65db0c63bd422a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up/Down skip over a cell's output instead of selecting it (GH #2382) <br /></td></tr>
+<tr class="separator:a81a73053f6adc3dffe65db0c63bd422a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4330a93b4f643b50c90c23eac546729f"><td class="memItemLeft" align="right" valign="top"><a id="a4330a93b4f643b50c90c23eac546729f" name="a4330a93b4f643b50c90c23eac546729f"></a>
 wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_hideBrackets</b></td></tr>
 <tr class="separator:a4330a93b4f643b50c90c23eac546729f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -450,9 +463,6 @@ wxChoice *&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoWrap</b><
 <tr class="memitem:a26319f992465ba863ebd3fef19b5afda"><td class="memItemLeft" align="right" valign="top"><a id="a26319f992465ba863ebd3fef19b5afda" name="a26319f992465ba863ebd3fef19b5afda"></a>
 wxSpinCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_labelWidth</b></td></tr>
 <tr class="separator:a26319f992465ba863ebd3fef19b5afda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77a2405d2bcaddc6c89bf42e357676ed"><td class="memItemLeft" align="right" valign="top"><a id="a77a2405d2bcaddc6c89bf42e357676ed" name="a77a2405d2bcaddc6c89bf42e357676ed"></a>
-wxSpinCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoLimit</b></td></tr>
-<tr class="separator:a77a2405d2bcaddc6c89bf42e357676ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a788db95d45d3d8afce7488f073cf4ef4"><td class="memItemLeft" align="right" valign="top"><a id="a788db95d45d3d8afce7488f073cf4ef4" name="a788db95d45d3d8afce7488f073cf4ef4"></a>
 wxSpinCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_recentItems</b></td></tr>
 <tr class="separator:a788db95d45d3d8afce7488f073cf4ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -471,12 +481,25 @@ wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_incremental
 <tr class="memitem:a13b8e98f457b465dc1e569761b8b5d2c"><td class="memItemLeft" align="right" valign="top"><a id="a13b8e98f457b465dc1e569761b8b5d2c" name="a13b8e98f457b465dc1e569761b8b5d2c"></a>
 wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_notifyIfIdle</b></td></tr>
 <tr class="separator:a13b8e98f457b465dc1e569761b8b5d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2098812610097a2c67bb5b2f6767dd8c"><td class="memItemLeft" align="right" valign="top"><a id="a2098812610097a2c67bb5b2f6767dd8c" name="a2098812610097a2c67bb5b2f6767dd8c"></a>
+wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_findDialogDockable</b></td></tr>
+<tr class="separator:a2098812610097a2c67bb5b2f6767dd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ddacffa691bd07d2adf131c5f57350"><td class="memItemLeft" align="right" valign="top"><a id="ac0ddacffa691bd07d2adf131c5f57350" name="ac0ddacffa691bd07d2adf131c5f57350"></a>
+wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mcpServerEnabled</b></td></tr>
+<tr class="separator:ac0ddacffa691bd07d2adf131c5f57350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a839f4112667d484c4f187931b6ed0b"><td class="memItemLeft" align="right" valign="top"><a id="a0a839f4112667d484c4f187931b6ed0b" name="a0a839f4112667d484c4f187931b6ed0b"></a>
+wxSpinCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mcpServerPort</b></td></tr>
+<tr class="separator:a0a839f4112667d484c4f187931b6ed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fcd63fe868ea4d6663391d051386d3"><td class="memItemLeft" align="right" valign="top"><a id="a39fcd63fe868ea4d6663391d051386d3" name="a39fcd63fe868ea4d6663391d051386d3"></a>
 wxChoice *&#160;</td><td class="memItemRight" valign="bottom"><b>m_showUserDefinedLabels</b></td></tr>
 <tr class="separator:a39fcd63fe868ea4d6663391d051386d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a512aecc977b124ce404018feef18f"><td class="memItemLeft" align="right" valign="top"><a id="a12a512aecc977b124ce404018feef18f" name="a12a512aecc977b124ce404018feef18f"></a>
 wxButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_getStyleFont</b></td></tr>
 <tr class="separator:a12a512aecc977b124ce404018feef18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c51b8f2baf3a5fcf581fdd122a1dda0"><td class="memItemLeft" align="right" valign="top"><a id="a7c51b8f2baf3a5fcf581fdd122a1dda0" name="a7c51b8f2baf3a5fcf581fdd122a1dda0"></a>
+wxChoice *&#160;</td><td class="memItemRight" valign="bottom"><b>m_appearanceChoice</b></td></tr>
+<tr class="memdesc:a7c51b8f2baf3a5fcf581fdd122a1dda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light / Dark / Follow-system selector (also picks which set the editor edits). <br /></td></tr>
+<tr class="separator:a7c51b8f2baf3a5fcf581fdd122a1dda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a76fad2a0e3aa4c2cfbac68a83196c1"><td class="memItemLeft" align="right" valign="top"><a id="a8a76fad2a0e3aa4c2cfbac68a83196c1" name="a8a76fad2a0e3aa4c2cfbac68a83196c1"></a>
 wxListBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_styleFor</b></td></tr>
 <tr class="separator:a8a76fad2a0e3aa4c2cfbac68a83196c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -558,10 +581,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_fontSize</b></td></t
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_mathFontSize</b></td></tr>
 <tr class="memdesc:a02f8ed84057b4ff0387da6a2f0fd9dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the maths font. <br /></td></tr>
 <tr class="separator:a02f8ed84057b4ff0387da6a2f0fd9dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270f8e743a41bf08808a3fe018732336"><td class="memItemLeft" align="right" valign="top"><a id="a270f8e743a41bf08808a3fe018732336" name="a270f8e743a41bf08808a3fe018732336"></a>
-std::unique_ptr&lt; wxImageList &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageList</b></td></tr>
-<tr class="memdesc:a270f8e743a41bf08808a3fe018732336"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classA.html">A</a> list containing the pictograms for the tabs. <br /></td></tr>
-<tr class="separator:a270f8e743a41bf08808a3fe018732336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794d1910caafa070c70ac8cab3a5ae10"><td class="memItemLeft" align="right" valign="top"><a id="a794d1910caafa070c70ac8cab3a5ae10" name="a794d1910caafa070c70ac8cab3a5ae10"></a>
+wxVector&lt; wxBitmapBundle &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageList</b></td></tr>
+<tr class="memdesc:a794d1910caafa070c70ac8cab3a5ae10"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classA.html">A</a> list containing the pictograms for the tabs. <br /></td></tr>
+<tr class="separator:a794d1910caafa070c70ac8cab3a5ae10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The configuration dialog. </p>

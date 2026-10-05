@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ieee_0',['ieee',['../classmux__using__with.html#a44d1d60c58066d98a072e90b31c9d908',1,'mux_using_with']]],
-  ['input_1',['input',['../classWorksheet_1_1SimpleMathConfigurationIterator.html#af0c3853bef4b41415d8400d9cc3b9e87',1,'Worksheet::SimpleMathConfigurationIterator']]]
+  ['globalvalue_0',['globalValue',['../file_8h.html#a4a86bef4b6181cb3f53bd0461a9a511b',1,'file.h']]],
+  ['globvar_1',['globVar',['../autolink_8cpp.html#a88d0bae800d600a11d7bd60f0bc4b858',1,'autolink.cpp']]]
 ];

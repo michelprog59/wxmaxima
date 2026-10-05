@@ -74,7 +74,6 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle"><div class="title">Configuration Class Reference</div></div>
 </div><!--header-->
@@ -87,18 +86,19 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for Configuration:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classConfiguration__coll__graph.svg" width="376" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classConfiguration__coll__graph.svg" width="211" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConfiguration_1_1CharsExist.html">CharsExist</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration_1_1FileToSave.html">FileToSave</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the information about a file we need to write during the save process.  <a href="classConfiguration_1_1FileToSave.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConfiguration_1_1PerformanceStats.html">PerformanceStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConfiguration_1_1ScalarSetting.html">ScalarSetting</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One mechanically persisted scalar setting: its config key and the member variable it is stored in.  <a href="structConfiguration_1_1ScalarSetting.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration_1_1TextsnippetToDraw.html">TextsnippetToDraw</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the information about a file we need to write during the save process.  <a href="classConfiguration_1_1TextsnippetToDraw.html#details">More...</a><br /></td></tr>
@@ -111,16 +111,17 @@ Public Types</h2></td></tr>
 , <b>browser</b> = 2
  }</td></tr>
 <tr class="separator:a185d197c4bc11306ee6646e584cfe407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae285be0c26dbdd7a86eac37c9cebdd7d"><td class="memItemLeft" align="right" valign="top"><a id="ae285be0c26dbdd7a86eac37c9cebdd7d" name="ae285be0c26dbdd7a86eac37c9cebdd7d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ae285be0c26dbdd7a86eac37c9cebdd7d">htmlExportFormat</a> { <br />
-&#160;&#160;<b>mathJaX_TeX</b> = 0
+<tr class="memitem:ae285be0c26dbdd7a86eac37c9cebdd7d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ae285be0c26dbdd7a86eac37c9cebdd7d">htmlExportFormat</a> { <br />
+&#160;&#160;<a class="el" href="classConfiguration.html#ae285be0c26dbdd7a86eac37c9cebdd7dad7f872bc1d23183096102bdf6e2e16e5">mathJaX_TeX</a> = 0
 , <b>bitmap</b> = 1
-, <b>mathML_mathJaX</b> = 2
+, <a class="el" href="classConfiguration.html#ae285be0c26dbdd7a86eac37c9cebdd7da56aa225dc8c883c72cc5e067b3abdd36">mathML_mathJaX</a> = 2
 , <b>svg</b> = 3
 , <br />
-&#160;&#160;<b>html_export_invalidChoice</b>
+&#160;&#160;<a class="el" href="classConfiguration.html#ae285be0c26dbdd7a86eac37c9cebdd7daf0065aa9583aacf0c567a4228a312df7">mathML</a> = 4
+, <b>html_export_invalidChoice</b>
 <br />
  }</td></tr>
-<tr class="memdesc:ae285be0c26dbdd7a86eac37c9cebdd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The export formats we support for HTML equations. <br /></td></tr>
+<tr class="memdesc:ae285be0c26dbdd7a86eac37c9cebdd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The export formats we support for HTML equations.  <a href="classConfiguration.html#ae285be0c26dbdd7a86eac37c9cebdd7d">More...</a><br /></td></tr>
 <tr class="separator:ae285be0c26dbdd7a86eac37c9cebdd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2fc1ea527ec66635bd2a002ab89671"><td class="memItemLeft" align="right" valign="top"><a id="a4d2fc1ea527ec66635bd2a002ab89671" name="a4d2fc1ea527ec66635bd2a002ab89671"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>showLabels</b> : int8_t { <br />
 &#160;&#160;<b>labels_automatic</b> = 0
@@ -151,15 +152,21 @@ Public Types</h2></td></tr>
 , <b>layoutPrefer1D</b> = 2
  }</td></tr>
 <tr class="separator:a2bb69c733d19083e4fbc552bfa26f297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03fec16ce6139610142240ce478b8315"><td class="memItemLeft" align="right" valign="top"><a id="a03fec16ce6139610142240ce478b8315" name="a03fec16ce6139610142240ce478b8315"></a>
-typedef std::unordered_map&lt; wxString, bool, wxStringHash &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StringBoolHash</b></td></tr>
-<tr class="separator:a03fec16ce6139610142240ce478b8315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a73cee7f139a5f8cf2fee0afc1fb9bd"><td class="memItemLeft" align="right" valign="top"><a id="a3a73cee7f139a5f8cf2fee0afc1fb9bd" name="a3a73cee7f139a5f8cf2fee0afc1fb9bd"></a>
-typedef std::unordered_map&lt; wxString, wxString, wxStringHash &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RenderablecharsHash</b></td></tr>
-<tr class="separator:a3a73cee7f139a5f8cf2fee0afc1fb9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a730b24755a7c5eb24da283c8e1f1865e"><td class="memItemLeft" align="right" valign="top"><a id="a730b24755a7c5eb24da283c8e1f1865e" name="a730b24755a7c5eb24da283c8e1f1865e"></a>
-typedef std::unordered_map&lt; wxString, int, wxStringHash &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StringHash</b></td></tr>
-<tr class="separator:a730b24755a7c5eb24da283c8e1f1865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5fa4e3eacde294a5f23ceca1b9283d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a> { <a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283dac4b292ca33b0a323d3c5096457c19c5a">showInFull</a> = 0
+, <a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283da7414f5aebe77ba706aef391616a0fb18">elide</a> = 1
+, <a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283da089b0cdd8835d09cb1cabf38b3ce9c09">scroll</a> = 2
+ }</td></tr>
+<tr class="memdesc:adb5fa4e3eacde294a5f23ceca1b9283d"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to show a matrix too large for the window.  <a href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">More...</a><br /></td></tr>
+<tr class="separator:adb5fa4e3eacde294a5f23ceca1b9283d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3c003a32828fe343fb6e3b616a4657"><td class="memItemLeft" align="right" valign="top"><a id="a0c3c003a32828fe343fb6e3b616a4657" name="a0c3c003a32828fe343fb6e3b616a4657"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a0c3c003a32828fe343fb6e3b616a4657">Appearance</a> { <b>light</b>
+, <b>dark</b>
+, <b>followSystem</b>
+ }</td></tr>
+<tr class="memdesc:a0c3c003a32828fe343fb6e3b616a4657"><td class="mdescLeft">&#160;</td><td class="mdescRight">How <a class="el" href="classwxMaxima.html">wxMaxima</a> chooses between the light and the dark style set. <br /></td></tr>
+<tr class="separator:a0c3c003a32828fe343fb6e3b616a4657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3038b1628cb0f8375167f946b8f6827"><td class="memItemLeft" align="right" valign="top"><a id="ab3038b1628cb0f8375167f946b8f6827" name="ab3038b1628cb0f8375167f946b8f6827"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StringBoolHash</b> = std::unordered_map&lt; wxString, bool, wxStringHash &gt;</td></tr>
+<tr class="separator:ab3038b1628cb0f8375167f946b8f6827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b4ceb3aa001a545b5c9efbbabf2f9ac"><td class="memItemLeft" align="right" valign="top"><a id="a4b4ceb3aa001a545b5c9efbbabf2f9ac" name="a4b4ceb3aa001a545b5c9efbbabf2f9ac"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EscCodeContainer</b> = std::unordered_map&lt; wxString, wxString, wxStringHash &gt;</td></tr>
 <tr class="separator:a4b4ceb3aa001a545b5c9efbbabf2f9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,13 +176,25 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>EscCodeIterator</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae4d6699f5f7ce4330b1e6806b05d286b"><td class="memItemLeft" align="right" valign="top"><a id="ae4d6699f5f7ce4330b1e6806b05d286b" name="ae4d6699f5f7ce4330b1e6806b05d286b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOperator</b> (wxString name)</td></tr>
-<tr class="memdesc:ae4d6699f5f7ce4330b1e6806b05d286b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coincides name with a operator known to maxima? <br /></td></tr>
-<tr class="separator:ae4d6699f5f7ce4330b1e6806b05d286b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c8b1318e5e74da5d687f05beec6958"><td class="memItemLeft" align="right" valign="top"><a id="af0c8b1318e5e74da5d687f05beec6958" name="af0c8b1318e5e74da5d687f05beec6958"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOperator</b> (wxString name) const</td></tr>
+<tr class="memdesc:af0c8b1318e5e74da5d687f05beec6958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coincides name with a operator known to maxima? <br /></td></tr>
+<tr class="separator:af0c8b1318e5e74da5d687f05beec6958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f16b08d936194321dfe5e27b8f5f32"><td class="memItemLeft" align="right" valign="top"><a id="aa6f16b08d936194321dfe5e27b8f5f32" name="aa6f16b08d936194321dfe5e27b8f5f32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddMaximaOperator</b> (const wxString &amp;name)</td></tr>
+<tr class="memdesc:aa6f16b08d936194321dfe5e27b8f5f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register name as an operator known to maxima. <br /></td></tr>
+<tr class="separator:aa6f16b08d936194321dfe5e27b8f5f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cbef299ff61c320d74f25fd59df2510"><td class="memItemLeft" align="right" valign="top"><a id="a2cbef299ff61c320d74f25fd59df2510" name="a2cbef299ff61c320d74f25fd59df2510"></a>
 const wxEnvVariableHashMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>MaximaEnvVars</b> () const</td></tr>
 <tr class="separator:a2cbef299ff61c320d74f25fd59df2510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f34f58710dc56742667c9ef39326bb2"><td class="memItemLeft" align="right" valign="top"><a id="a4f34f58710dc56742667c9ef39326bb2" name="a4f34f58710dc56742667c9ef39326bb2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearMaximaEnvVars</b> ()</td></tr>
+<tr class="memdesc:a4f34f58710dc56742667c9ef39326bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forget all custom environment variables for the maxima process. <br /></td></tr>
+<tr class="separator:a4f34f58710dc56742667c9ef39326bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addef313b5b2ae2c2fe275aa1f6ee6248"><td class="memItemLeft" align="right" valign="top"><a id="addef313b5b2ae2c2fe275aa1f6ee6248" name="addef313b5b2ae2c2fe275aa1f6ee6248"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaximaEnvVar</b> (const wxString &amp;name, const wxString &amp;value)</td></tr>
+<tr class="memdesc:addef313b5b2ae2c2fe275aa1f6ee6248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom environment variable for the maxima process. <br /></td></tr>
+<tr class="separator:addef313b5b2ae2c2fe275aa1f6ee6248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54b9807f7e5401045540dbcee7fc95f6"><td class="memItemLeft" align="right" valign="top"><a id="a54b9807f7e5401045540dbcee7fc95f6" name="a54b9807f7e5401045540dbcee7fc95f6"></a>
 mathDisplayMode&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayMode</b> () const</td></tr>
 <tr class="memdesc:a54b9807f7e5401045540dbcee7fc95f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does maxima output 1<a class="el" href="classD.html">D</a>, 2<a class="el" href="classD.html">D</a> or 2<a class="el" href="classD.html">D</a> ASCII equations? <br /></td></tr>
@@ -202,6 +221,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadConfig</b> ()</td
 <tr class="memitem:a98f47986d60090ae9ee5fe663545f43d"><td class="memItemLeft" align="right" valign="top"><a id="a98f47986d60090ae9ee5fe663545f43d" name="a98f47986d60090ae9ee5fe663545f43d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Configuration</b> (const <a class="el" href="classConfiguration.html">Configuration</a> &amp;o)</td></tr>
 <tr class="separator:a98f47986d60090ae9ee5fe663545f43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd68586c893e5e2d640d01624e7f9065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#abd68586c893e5e2d640d01624e7f9065">MakeTemporary</a> ()</td></tr>
+<tr class="memdesc:abd68586c893e5e2d640d01624e7f9065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes this configuration temporary.  <br /></td></tr>
+<tr class="separator:abd68586c893e5e2d640d01624e7f9065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad67d1d85a3e09ea96baf5f7dee4c9b82"><td class="memItemLeft" align="right" valign="top"><a id="ad67d1d85a3e09ea96baf5f7dee4c9b82" name="ad67d1d85a3e09ea96baf5f7dee4c9b82"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetAllToDefaults</b> ()</td></tr>
 <tr class="memdesc:ad67d1d85a3e09ea96baf5f7dee4c9b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the whole configuration to its default values. <br /></td></tr>
@@ -248,6 +270,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HideBrackets</b> () c
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HideBrackets</b> (bool hide)</td></tr>
 <tr class="memdesc:ac05473e9ab3c972d4587415e9d5611a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define if we want to hide brackets that are not under the pointer. <br /></td></tr>
 <tr class="separator:ac05473e9ab3c972d4587415e9d5611a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47f0eff43b0d7e3f812f2f2413723ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ab47f0eff43b0d7e3f812f2f2413723ac">OverlayScrollbars</a> () const</td></tr>
+<tr class="memdesc:ab47f0eff43b0d7e3f812f2f2413723ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use GTK's overlay scrollbars on the worksheet?  <br /></td></tr>
+<tr class="separator:ab47f0eff43b0d7e3f812f2f2413723ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf3101066b9662eb6e2de4c1b44f9d1"><td class="memItemLeft" align="right" valign="top"><a id="accf3101066b9662eb6e2de4c1b44f9d1" name="accf3101066b9662eb6e2de4c1b44f9d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OverlayScrollbars</b> (bool overlay)</td></tr>
+<tr class="memdesc:accf3101066b9662eb6e2de4c1b44f9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define if the worksheet should use GTK's overlay scrollbars. <br /></td></tr>
+<tr class="separator:accf3101066b9662eb6e2de4c1b44f9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa083f8a96209a61f7816980ed36e25"><td class="memItemLeft" align="right" valign="top"><a id="a7aa083f8a96209a61f7816980ed36e25" name="a7aa083f8a96209a61f7816980ed36e25"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>PrintScale</b> () const</td></tr>
 <tr class="memdesc:a7aa083f8a96209a61f7816980ed36e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide brackets that are not under the pointer? <br /></td></tr>
@@ -347,6 +376,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AutosaveMinutes</b> (
 long&#160;</td><td class="memItemRight" valign="bottom"><b>GetCursorWidth</b> () const</td></tr>
 <tr class="memdesc:ab846659feaf663040485851b722a2106"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much vertical space is to be left between two group cells? <br /></td></tr>
 <tr class="separator:ab846659feaf663040485851b722a2106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ea385b7a1495cae3da369cd51fffe6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ac3ea385b7a1495cae3da369cd51fffe6">GetWorksheetTopOffset</a> () const</td></tr>
+<tr class="memdesc:ac3ea385b7a1495cae3da369cd51fffe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extra top margin of less than one scroll unit, in px.  <br /></td></tr>
+<tr class="separator:ac3ea385b7a1495cae3da369cd51fffe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b494d70699a11e13a693c356e1d169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a87b494d70699a11e13a693c356e1d169">SetWorksheetTopOffset</a> (int offset)</td></tr>
+<tr class="memdesc:a87b494d70699a11e13a693c356e1d169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the extra top margin.  <br /></td></tr>
+<tr class="separator:a87b494d70699a11e13a693c356e1d169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8004ace11a8c74983670984d521cecbb"><td class="memItemLeft" align="right" valign="top"><a id="a8004ace11a8c74983670984d521cecbb" name="a8004ace11a8c74983670984d521cecbb"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><b>GetBaseIndent</b> () const</td></tr>
 <tr class="memdesc:a8004ace11a8c74983670984d521cecbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y position the worksheet starts at. <br /></td></tr>
@@ -376,6 +411,21 @@ LayoutStrategy&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayoutSt
 <tr class="memitem:a883ae3bac0e86756c1b7001b9888ba76"><td class="memItemLeft" align="right" valign="top"><a id="a883ae3bac0e86756c1b7001b9888ba76" name="a883ae3bac0e86756c1b7001b9888ba76"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLayoutStrategy</b> (LayoutStrategy s)</td></tr>
 <tr class="separator:a883ae3bac0e86756c1b7001b9888ba76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb69b95f1025040fb5c0826786a6df5"><td class="memItemLeft" align="right" valign="top"><a id="a5bb69b95f1025040fb5c0826786a6df5" name="a5bb69b95f1025040fb5c0826786a6df5"></a>
+<a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetOversizedMatrices</b> () const</td></tr>
+<tr class="separator:a5bb69b95f1025040fb5c0826786a6df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02af890f0125a1ce1c37d71e62e8fd5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a02af890f0125a1ce1c37d71e62e8fd5b">SetOversizedMatrices</a> (<a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a> mode, bool perMatrixOverridable=true)</td></tr>
+<tr class="memdesc:a02af890f0125a1ce1c37d71e62e8fd5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets how oversized matrices are shown.  <br /></td></tr>
+<tr class="separator:a02af890f0125a1ce1c37d71e62e8fd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a73721fe321f61f0d3154585fee086"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a37a73721fe321f61f0d3154585fee086">OversizedMatricesFor</a> (std::optional&lt; <a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a> &gt; requested) const</td></tr>
+<tr class="memdesc:a37a73721fe321f61f0d3154585fee086"><td class="mdescLeft">&#160;</td><td class="mdescRight">How one specific matrix that is too large for the window is shown.  <br /></td></tr>
+<tr class="separator:a37a73721fe321f61f0d3154585fee086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74421be4dc53ee0606c3852c8e81d403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrixScrollHost.html">MatrixScrollHost</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a74421be4dc53ee0606c3852c8e81d403">GetMatrixScrollHost</a> () const</td></tr>
+<tr class="memdesc:a74421be4dc53ee0606c3852c8e81d403"><td class="mdescLeft">&#160;</td><td class="mdescRight">What gives a scrolling matrix its scrollbars, if anything.  <br /></td></tr>
+<tr class="separator:a74421be4dc53ee0606c3852c8e81d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae256b00ca5287c4843a49063e2021226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ae256b00ca5287c4843a49063e2021226">SetMatrixScrollHost</a> (<a class="el" href="classMatrixScrollHost.html">MatrixScrollHost</a> *host)</td></tr>
+<tr class="memdesc:ae256b00ca5287c4843a49063e2021226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scrollbar host.  <br /></td></tr>
+<tr class="separator:ae256b00ca5287c4843a49063e2021226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f59bf8e65be3aca486eae707b0a3b64"><td class="memItemLeft" align="right" valign="top"><a id="a6f59bf8e65be3aca486eae707b0a3b64" name="a6f59bf8e65be3aca486eae707b0a3b64"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLayoutDeadline</b> (int seconds)</td></tr>
 <tr class="separator:a6f59bf8e65be3aca486eae707b0a3b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -411,6 +461,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>LineWidth_em</b> (lon
 long&#160;</td><td class="memItemRight" valign="bottom"><b>GetLineWidth</b> () const</td></tr>
 <tr class="memdesc:aab8b2c0eadfec6687bf7f473d182788e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum sensible width for a text line [in characters]: <br /></td></tr>
 <tr class="separator:aab8b2c0eadfec6687bf7f473d182788e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10787a27dea1d6a386eebdc6d9db23a2"><td class="memItemLeft" align="right" valign="top"><a id="a10787a27dea1d6a386eebdc6d9db23a2" name="a10787a27dea1d6a386eebdc6d9db23a2"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsciiArtColumns</b> () const</td></tr>
+<tr class="memdesc:a10787a27dea1d6a386eebdc6d9db23a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many columns of the ASCII-art monospace font (TS_ASCIIMATHS) fit into <a class="el" href="classConfiguration.html#aab8b2c0eadfec6687bf7f473d182788e" title="Returns the maximum sensible width for a text line [in characters]:">GetLineWidth()</a>? Used to tell <a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a>'s own ASCII-art 2D/1D printer ($linel) how wide the worksheet actually is, see <a class="el" href="classwxMaxima.html#af2f5e80d2d27151a20ffc5efd641bc4e" title="Is called on start and whenever the configuration changes.">wxMaxima::ConfigChanged()</a>. <br /></td></tr>
+<tr class="separator:a10787a27dea1d6a386eebdc6d9db23a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeda7c4f861df9f919da89f9954f82ffa"><td class="memItemLeft" align="right" valign="top"><a id="aeda7c4f861df9f919da89f9954f82ffa" name="aeda7c4f861df9f919da89f9954f82ffa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveUntitled</b> () const</td></tr>
 <tr class="separator:aeda7c4f861df9f919da89f9954f82ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,6 +477,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CursorJump</b> () con
 <tr class="memitem:ab4d187dd22be3d5bf8da43d97f24615d"><td class="memItemLeft" align="right" valign="top"><a id="ab4d187dd22be3d5bf8da43d97f24615d" name="ab4d187dd22be3d5bf8da43d97f24615d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CursorJump</b> (bool save)</td></tr>
 <tr class="separator:ab4d187dd22be3d5bf8da43d97f24615d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9476f5002dc14dc335da45696d27cc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ae9476f5002dc14dc335da45696d27cc3">ArrowKeysSkipOutput</a> () const</td></tr>
+<tr class="memdesc:ae9476f5002dc14dc335da45696d27cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the Up and Down keys skip over a cell's output?  <br /></td></tr>
+<tr class="separator:ae9476f5002dc14dc335da45696d27cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb92a06b8c1063149f4171b67e1462c"><td class="memItemLeft" align="right" valign="top"><a id="abcb92a06b8c1063149f4171b67e1462c" name="abcb92a06b8c1063149f4171b67e1462c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ArrowKeysSkipOutput</b> (bool skip)</td></tr>
+<tr class="separator:abcb92a06b8c1063149f4171b67e1462c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af042c713e54a16edce525f5c27c1ef25"><td class="memItemLeft" align="right" valign="top"><a id="af042c713e54a16edce525f5c27c1ef25" name="af042c713e54a16edce525f5c27c1ef25"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>NumpadEnterEvaluates</b> () const</td></tr>
 <tr class="separator:af042c713e54a16edce525f5c27c1ef25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -439,6 +499,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveImgFileName</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAutoWrap</b> () const</td></tr>
 <tr class="memdesc:a2944390c8108ebbc64f8d878a8ccbbe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do we want to have automatic line breaks for text cells? <br /></td></tr>
 <tr class="separator:a2944390c8108ebbc64f8d878a8ccbbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c3b5401863816379c1b9e51b949ddb"><td class="memItemLeft" align="right" valign="top"><a id="aa9c3b5401863816379c1b9e51b949ddb" name="aa9c3b5401863816379c1b9e51b949ddb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAutoWrapCode</b> () const</td></tr>
+<tr class="memdesc:aa9c3b5401863816379c1b9e51b949ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do we want to have automatic line breaks for code cells? <br /></td></tr>
+<tr class="separator:aa9c3b5401863816379c1b9e51b949ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25f8652d4b5b8b36d07230cac80ab2ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a25f8652d4b5b8b36d07230cac80ab2ab">SetAutoWrap</a> (long autoWrap)</td></tr>
 <tr class="memdesc:a25f8652d4b5b8b36d07230cac80ab2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the auto wrap mode.  <br /></td></tr>
 <tr class="separator:a25f8652d4b5b8b36d07230cac80ab2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -517,9 +581,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowCodeCells</b> (bo
 wxColour&#160;</td><td class="memItemRight" valign="bottom"><b>GetColor</b> (<a class="el" href="TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993">TextStyle</a> style)</td></tr>
 <tr class="memdesc:ab49ae1da5169571137816ff38f0b7edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the color for a text style. <br /></td></tr>
 <tr class="separator:ab49ae1da5169571137816ff38f0b7edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a059f2a73e613927c2367559c2d0f3d93"><td class="memItemLeft" align="right" valign="top">wxColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a059f2a73e613927c2367559c2d0f3d93">MakeColorDifferFromBackground</a> (wxColor color)</td></tr>
-<tr class="memdesc:a059f2a73e613927c2367559c2d0f3d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make this color differ from the background by a noticeable amount.  <br /></td></tr>
-<tr class="separator:a059f2a73e613927c2367559c2d0f3d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ca472b71126f55ff0dfc3450ac877e"><td class="memItemLeft" align="right" valign="top"><a id="a58ca472b71126f55ff0dfc3450ac877e" name="a58ca472b71126f55ff0dfc3450ac877e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>UsePngCairo</b> () const</td></tr>
 <tr class="separator:a58ca472b71126f55ff0dfc3450ac877e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -583,15 +644,139 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyIfIdle</b> () c
 <tr class="memitem:ac3efc1f847f198940ee7ace4442c915e"><td class="memItemLeft" align="right" valign="top"><a id="ac3efc1f847f198940ee7ace4442c915e" name="ac3efc1f847f198940ee7ace4442c915e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyIfIdle</b> (bool notify)</td></tr>
 <tr class="separator:ac3efc1f847f198940ee7ace4442c915e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d2cf11f559e8da4da557937a9e84cc"><td class="memItemLeft" align="right" valign="top"><a id="a58d2cf11f559e8da4da557937a9e84cc" name="a58d2cf11f559e8da4da557937a9e84cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>FindDialogDockable</b> () const</td></tr>
+<tr class="memdesc:a58d2cf11f559e8da4da557937a9e84cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show "Find and Replace" as a dockable sidebar instead of a floating dialog? <br /></td></tr>
+<tr class="separator:a58d2cf11f559e8da4da557937a9e84cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056c6819c541c813637e92407a55ec21"><td class="memItemLeft" align="right" valign="top"><a id="a056c6819c541c813637e92407a55ec21" name="a056c6819c541c813637e92407a55ec21"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FindDialogDockable</b> (bool dockable)</td></tr>
+<tr class="separator:a056c6819c541c813637e92407a55ec21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480cc8fedf36e05a56b6321d2576e001"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a480cc8fedf36e05a56b6321d2576e001">McpServerEnabled</a> () const</td></tr>
+<tr class="memdesc:a480cc8fedf36e05a56b6321d2576e001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the MCP (Model Context Protocol) server, exposing the current worksheet's contents (cells, table of contents, watched variables) as read-only context an external AI tool can query over a local HTTP connection? Off by default &ndash; this is an opt-in feature, and the server only ever answers requests, it can never make <a class="el" href="classwxMaxima.html">wxMaxima</a> insert, edit or evaluate anything itself.  <br /></td></tr>
+<tr class="separator:a480cc8fedf36e05a56b6321d2576e001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc558abf6ca8266463e1dd4a10f30b9"><td class="memItemLeft" align="right" valign="top"><a id="addc558abf6ca8266463e1dd4a10f30b9" name="addc558abf6ca8266463e1dd4a10f30b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>McpServerEnabled</b> (bool enabled)</td></tr>
+<tr class="separator:addc558abf6ca8266463e1dd4a10f30b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cecee0db3a0b3459ba4b462a3bbcddc"><td class="memItemLeft" align="right" valign="top"><a id="a4cecee0db3a0b3459ba4b462a3bbcddc" name="a4cecee0db3a0b3459ba4b462a3bbcddc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>McpServerPort</b> () const</td></tr>
+<tr class="memdesc:a4cecee0db3a0b3459ba4b462a3bbcddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which localhost TCP port the MCP server listens on, if enabled. <br /></td></tr>
+<tr class="separator:a4cecee0db3a0b3459ba4b462a3bbcddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a05075ad59ee463011f5a9fb6ade035"><td class="memItemLeft" align="right" valign="top"><a id="a1a05075ad59ee463011f5a9fb6ade035" name="a1a05075ad59ee463011f5a9fb6ade035"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>McpServerPort</b> (int port)</td></tr>
+<tr class="separator:a1a05075ad59ee463011f5a9fb6ade035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf5ccf815501a086738b0888693ddf7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#adcf5ccf815501a086738b0888693ddf7">AiChatProvider</a> () const</td></tr>
+<tr class="memdesc:adcf5ccf815501a086738b0888693ddf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which AI provider the AI chat sidebar talks to, as an AiProviderKind cast to int (0 = AiProviderKind::None, i.e.  <br /></td></tr>
+<tr class="separator:adcf5ccf815501a086738b0888693ddf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127d22a42ae430e480217d85e1ab0c9f"><td class="memItemLeft" align="right" valign="top"><a id="a127d22a42ae430e480217d85e1ab0c9f" name="a127d22a42ae430e480217d85e1ab0c9f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiChatProvider</b> (int provider)</td></tr>
+<tr class="separator:a127d22a42ae430e480217d85e1ab0c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0536a35baa199414549091c19c2f009"><td class="memItemLeft" align="right" valign="top"><a id="af0536a35baa199414549091c19c2f009" name="af0536a35baa199414549091c19c2f009"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyAnthropic</b> () const</td></tr>
+<tr class="memdesc:af0536a35baa199414549091c19c2f009"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user's API key for each provider, kept separate so switching providers in Options doesn't lose the others. Stored in the OS secret store (<a class="el" href="classAiProvider.html#a5b1e24c3ee7a6d408fdb13442f84ab06" title="Saves (or, for an empty key, deletes) an API key for service – a stable identifier: AiProviderKindNam...">AiProvider::SaveApiKey()</a>/LoadApiKey()), never in plain Configuration/wxConfig &ndash; defined out-of-line in <a class="el" href="Configuration_8cpp.html" title="This file defines the class Configuration which serves as a fast configuration storage.">Configuration.cpp</a> specifically so this header doesn't need to include <a class="el" href="AiProvider_8h.html" title="Talks to one of a handful of external AI chat APIs for the AI chat sidebar (AiChatSidebar).">ai/AiProvider.h</a> just for these four accessors. The whole AI Chat feature is hidden (see <a class="el" href="classAiProvider.html#af1e55c3b86011c3b0f8f1e84f437286e" title="True if this build of wxWidgets has a working wxSecretStore backend (&gt;= 3.1.1, compiled with wxUSE_SE...">AiProvider::SecretStoreAvailable()</a>) on a build/system where no secret store is actually available, so these are never called in a way that would need a plain-text fallback. <br /></td></tr>
+<tr class="separator:af0536a35baa199414549091c19c2f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab798da11330aefb228f060556244d018"><td class="memItemLeft" align="right" valign="top"><a id="ab798da11330aefb228f060556244d018" name="ab798da11330aefb228f060556244d018"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyAnthropic</b> (const wxString &amp;key)</td></tr>
+<tr class="separator:ab798da11330aefb228f060556244d018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5c8ceab85af427088abad3aab64e33"><td class="memItemLeft" align="right" valign="top"><a id="afb5c8ceab85af427088abad3aab64e33" name="afb5c8ceab85af427088abad3aab64e33"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenAI</b> () const</td></tr>
+<tr class="separator:afb5c8ceab85af427088abad3aab64e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12edba0fc01160d1bbd68117a486f40"><td class="memItemLeft" align="right" valign="top"><a id="ad12edba0fc01160d1bbd68117a486f40" name="ad12edba0fc01160d1bbd68117a486f40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenAI</b> (const wxString &amp;key)</td></tr>
+<tr class="separator:ad12edba0fc01160d1bbd68117a486f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4d5f8cd4e35cc32c7a88624053d753"><td class="memItemLeft" align="right" valign="top"><a id="abf4d5f8cd4e35cc32c7a88624053d753" name="abf4d5f8cd4e35cc32c7a88624053d753"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGoogle</b> () const</td></tr>
+<tr class="separator:abf4d5f8cd4e35cc32c7a88624053d753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820dfb03fb7e0788fe2d18485edf7e5c"><td class="memItemLeft" align="right" valign="top"><a id="a820dfb03fb7e0788fe2d18485edf7e5c" name="a820dfb03fb7e0788fe2d18485edf7e5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGoogle</b> (const wxString &amp;key)</td></tr>
+<tr class="separator:a820dfb03fb7e0788fe2d18485edf7e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd709457ca4b67fe3a881f7d2fe2b26"><td class="memItemLeft" align="right" valign="top"><a id="a7fd709457ca4b67fe3a881f7d2fe2b26" name="a7fd709457ca4b67fe3a881f7d2fe2b26"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyQwen</b> () const</td></tr>
+<tr class="separator:a7fd709457ca4b67fe3a881f7d2fe2b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ca5f84ce8726146c44987bec81a7be"><td class="memItemLeft" align="right" valign="top"><a id="a39ca5f84ce8726146c44987bec81a7be" name="a39ca5f84ce8726146c44987bec81a7be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyQwen</b> (const wxString &amp;key)</td></tr>
+<tr class="separator:a39ca5f84ce8726146c44987bec81a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b47e1cae145c13c667d099e304e9ce"><td class="memItemLeft" align="right" valign="top"><a id="a69b47e1cae145c13c667d099e304e9ce" name="a69b47e1cae145c13c667d099e304e9ce"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGitHubModels</b> () const</td></tr>
+<tr class="memdesc:a69b47e1cae145c13c667d099e304e9ce"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classA.html">A</a> GitHub personal access token (fine-grained, "Models: read" permission) &ndash; see AiProviderKind::GitHubModels's own doc comment for why this is GitHub's official Models API, not Copilot Chat. <br /></td></tr>
+<tr class="separator:a69b47e1cae145c13c667d099e304e9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05b96a988363df7f1ea45bf3ee3e050"><td class="memItemLeft" align="right" valign="top"><a id="ac05b96a988363df7f1ea45bf3ee3e050" name="ac05b96a988363df7f1ea45bf3ee3e050"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGitHubModels</b> (const wxString &amp;key)</td></tr>
+<tr class="separator:ac05b96a988363df7f1ea45bf3ee3e050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1875868fdf565dda934e5db012cde517"><td class="memItemLeft" align="right" valign="top"><a id="a1875868fdf565dda934e5db012cde517" name="a1875868fdf565dda934e5db012cde517"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyDeepSeek</b> () const</td></tr>
+<tr class="separator:a1875868fdf565dda934e5db012cde517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf15054d9d7c23e7981ade783397365e"><td class="memItemLeft" align="right" valign="top"><a id="adf15054d9d7c23e7981ade783397365e" name="adf15054d9d7c23e7981ade783397365e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyDeepSeek</b> (const wxString &amp;key)</td></tr>
+<tr class="separator:adf15054d9d7c23e7981ade783397365e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af0aaf5a6571eebbbf56151e39017ef"><td class="memItemLeft" align="right" valign="top"><a id="a0af0aaf5a6571eebbbf56151e39017ef" name="a0af0aaf5a6571eebbbf56151e39017ef"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenRouter</b> () const</td></tr>
+<tr class="separator:a0af0aaf5a6571eebbbf56151e39017ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab383b9e95ca382aeb001835ba28d8081"><td class="memItemLeft" align="right" valign="top"><a id="ab383b9e95ca382aeb001835ba28d8081" name="ab383b9e95ca382aeb001835ba28d8081"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenRouter</b> (const wxString &amp;key)</td></tr>
+<tr class="separator:ab383b9e95ca382aeb001835ba28d8081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab3a52c59a511ce06026ae05e4dd5af"><td class="memItemLeft" align="right" valign="top"><a id="a2ab3a52c59a511ce06026ae05e4dd5af" name="a2ab3a52c59a511ce06026ae05e4dd5af"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelAnthropic</b> () const</td></tr>
+<tr class="memdesc:a2ab3a52c59a511ce06026ae05e4dd5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">The model id to request from each provider; defaults to AiProviderDefaultModel() but the user can override it in Options, since model catalogs change far more often than this code does. <br /></td></tr>
+<tr class="separator:a2ab3a52c59a511ce06026ae05e4dd5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e7380483f777896977eb8242ebed89"><td class="memItemLeft" align="right" valign="top"><a id="af9e7380483f777896977eb8242ebed89" name="af9e7380483f777896977eb8242ebed89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelAnthropic</b> (const wxString &amp;model)</td></tr>
+<tr class="separator:af9e7380483f777896977eb8242ebed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ba88911115a6f9a5ec59ec11d6e4ac"><td class="memItemLeft" align="right" valign="top"><a id="a88ba88911115a6f9a5ec59ec11d6e4ac" name="a88ba88911115a6f9a5ec59ec11d6e4ac"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelOpenAI</b> () const</td></tr>
+<tr class="separator:a88ba88911115a6f9a5ec59ec11d6e4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d08a1f32d4ed72a36e3655a6dcab1e"><td class="memItemLeft" align="right" valign="top"><a id="ad8d08a1f32d4ed72a36e3655a6dcab1e" name="ad8d08a1f32d4ed72a36e3655a6dcab1e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelOpenAI</b> (const wxString &amp;model)</td></tr>
+<tr class="separator:ad8d08a1f32d4ed72a36e3655a6dcab1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350d7150a2192852b26f6c431fa9942d"><td class="memItemLeft" align="right" valign="top"><a id="a350d7150a2192852b26f6c431fa9942d" name="a350d7150a2192852b26f6c431fa9942d"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelGoogle</b> () const</td></tr>
+<tr class="separator:a350d7150a2192852b26f6c431fa9942d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1cb0c0fa2d165fa4ff42473b3f3458"><td class="memItemLeft" align="right" valign="top"><a id="a4c1cb0c0fa2d165fa4ff42473b3f3458" name="a4c1cb0c0fa2d165fa4ff42473b3f3458"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelGoogle</b> (const wxString &amp;model)</td></tr>
+<tr class="separator:a4c1cb0c0fa2d165fa4ff42473b3f3458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ede6f40c295d02ad2413298d1b5c3fd"><td class="memItemLeft" align="right" valign="top"><a id="a9ede6f40c295d02ad2413298d1b5c3fd" name="a9ede6f40c295d02ad2413298d1b5c3fd"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelQwen</b> () const</td></tr>
+<tr class="separator:a9ede6f40c295d02ad2413298d1b5c3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04064c24d638354fefb7342e0e545d61"><td class="memItemLeft" align="right" valign="top"><a id="a04064c24d638354fefb7342e0e545d61" name="a04064c24d638354fefb7342e0e545d61"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelQwen</b> (const wxString &amp;model)</td></tr>
+<tr class="separator:a04064c24d638354fefb7342e0e545d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3a0e6053b1c5b92f6d19243bc827f5"><td class="memItemLeft" align="right" valign="top"><a id="a7d3a0e6053b1c5b92f6d19243bc827f5" name="a7d3a0e6053b1c5b92f6d19243bc827f5"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelGitHubModels</b> () const</td></tr>
+<tr class="separator:a7d3a0e6053b1c5b92f6d19243bc827f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605ba24acb71341307c9c4f4f8b2d70f"><td class="memItemLeft" align="right" valign="top"><a id="a605ba24acb71341307c9c4f4f8b2d70f" name="a605ba24acb71341307c9c4f4f8b2d70f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelGitHubModels</b> (const wxString &amp;model)</td></tr>
+<tr class="separator:a605ba24acb71341307c9c4f4f8b2d70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1eafb2b9362e69c163631b9ce90819"><td class="memItemLeft" align="right" valign="top"><a id="afd1eafb2b9362e69c163631b9ce90819" name="afd1eafb2b9362e69c163631b9ce90819"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelDeepSeek</b> () const</td></tr>
+<tr class="separator:afd1eafb2b9362e69c163631b9ce90819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430bc0cc660aba674697ec5e5d5506be"><td class="memItemLeft" align="right" valign="top"><a id="a430bc0cc660aba674697ec5e5d5506be" name="a430bc0cc660aba674697ec5e5d5506be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelDeepSeek</b> (const wxString &amp;model)</td></tr>
+<tr class="separator:a430bc0cc660aba674697ec5e5d5506be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4266633e70708a0723ab668cd579aa8a"><td class="memItemLeft" align="right" valign="top"><a id="a4266633e70708a0723ab668cd579aa8a" name="a4266633e70708a0723ab668cd579aa8a"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelOpenRouter</b> () const</td></tr>
+<tr class="separator:a4266633e70708a0723ab668cd579aa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a51194401e3ef12bbf5dbfa828c85d0"><td class="memItemLeft" align="right" valign="top"><a id="a3a51194401e3ef12bbf5dbfa828c85d0" name="a3a51194401e3ef12bbf5dbfa828c85d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelOpenRouter</b> (const wxString &amp;model)</td></tr>
+<tr class="separator:a3a51194401e3ef12bbf5dbfa828c85d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2c9d05332ac3d51539022893cafe31"><td class="memItemLeft" align="right" valign="top"><a id="ade2c9d05332ac3d51539022893cafe31" name="ade2c9d05332ac3d51539022893cafe31"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiCustomProvidersJson</b> () const</td></tr>
+<tr class="memdesc:ade2c9d05332ac3d51539022893cafe31"><td class="mdescLeft">&#160;</td><td class="mdescRight">User-added custom providers (beyond the four built-in ones), as a JSON array &ndash; see AiCustomProviderConfig/ParseAiCustomProviders() in <a class="el" href="AiProvider_8h.html" title="Talks to one of a handful of external AI chat APIs for the AI chat sidebar (AiChatSidebar).">ai/AiProvider.h</a>. Each entry's API key lives in the secret store, keyed by AiProvider::CustomProviderSecretService(id), not in this string. <br /></td></tr>
+<tr class="separator:ade2c9d05332ac3d51539022893cafe31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89651bcd0029aa8f5c049d382c7a26e3"><td class="memItemLeft" align="right" valign="top"><a id="a89651bcd0029aa8f5c049d382c7a26e3" name="a89651bcd0029aa8f5c049d382c7a26e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiCustomProvidersJson</b> (const wxString &amp;json)</td></tr>
+<tr class="separator:a89651bcd0029aa8f5c049d382c7a26e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba33d516a05aa4ecd8d772aa05068a4"><td class="memItemLeft" align="right" valign="top"><a id="a0ba33d516a05aa4ecd8d772aa05068a4" name="a0ba33d516a05aa4ecd8d772aa05068a4"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiActiveCustomProviderId</b> () const</td></tr>
+<tr class="memdesc:a0ba33d516a05aa4ecd8d772aa05068a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which custom provider is active, by <a class="el" href="structAiCustomProviderConfig.html#a0207ccb18ed3c701fc3cd8fc11b30c8a" title="Stable, internally-generated identifier – never shown in the UI and never reused, so renaming a provi...">AiCustomProviderConfig::id</a> &ndash; meaningful only when <a class="el" href="classConfiguration.html#adcf5ccf815501a086738b0888693ddf7" title="Which AI provider the AI chat sidebar talks to, as an AiProviderKind cast to int (0 = AiProviderKind:...">AiChatProvider()</a> == (int)AiProviderKind::Custom. Empty if none/not applicable. <br /></td></tr>
+<tr class="separator:a0ba33d516a05aa4ecd8d772aa05068a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c171c99ce65fecdc3001cc43555e03"><td class="memItemLeft" align="right" valign="top"><a id="a91c171c99ce65fecdc3001cc43555e03" name="a91c171c99ce65fecdc3001cc43555e03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiActiveCustomProviderId</b> (const wxString &amp;id)</td></tr>
+<tr class="separator:a91c171c99ce65fecdc3001cc43555e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed909c1cc93e4ed6d7fa074c558d295f"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#aed909c1cc93e4ed6d7fa074c558d295f">GetDisplayedDigits</a> () const</td></tr>
 <tr class="memdesc:aed909c1cc93e4ed6d7fa074c558d295f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of displayed digits.  <br /></td></tr>
 <tr class="separator:aed909c1cc93e4ed6d7fa074c558d295f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeddd19b16775efe58f1f5ce22009d43"><td class="memItemLeft" align="right" valign="top"><a id="aaeddd19b16775efe58f1f5ce22009d43" name="aaeddd19b16775efe58f1f5ce22009d43"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDisplayedDigits</b> (long displayedDigits)</td></tr>
 <tr class="separator:aaeddd19b16775efe58f1f5ce22009d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe114e0ed18b66433e2a69b7e57c2035"><td class="memItemLeft" align="right" valign="top"><a id="afe114e0ed18b66433e2a69b7e57c2035" name="afe114e0ed18b66433e2a69b7e57c2035"></a>
-<a class="el" href="classConfiguration_1_1FileToSave.html">FileToSave</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PopFileToSave</b> ()</td></tr>
-<tr class="separator:afe114e0ed18b66433e2a69b7e57c2035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02d94957ff5eaa7b82b3de0347aef9e3"><td class="memItemLeft" align="right" valign="top"><a id="a02d94957ff5eaa7b82b3de0347aef9e3" name="a02d94957ff5eaa7b82b3de0347aef9e3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PushFileToSave</b> (const wxString &amp;filename, const wxMemoryBuffer &amp;data)</td></tr>
 <tr class="separator:a02d94957ff5eaa7b82b3de0347aef9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -637,6 +822,12 @@ wxSize&#160;</td><td class="memItemRight" valign="bottom"><b>GetCanvasSize</b> (
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCanvasSize</b> (wxSize siz)</td></tr>
 <tr class="memdesc:acf2480a0cd9d621c7cb910153c8daba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the current worksheet's visible window. <br /></td></tr>
 <tr class="separator:acf2480a0cd9d621c7cb910153c8daba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b652a7273738e04765b311e3f8cbacc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a8b652a7273738e04765b311e3f8cbacc">RightToLeftDocument</a> () const</td></tr>
+<tr class="memdesc:a8b652a7273738e04765b311e3f8cbacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the document read right-to-left (Arabic, Hebrew, Persian, Urdu)?  <br /></td></tr>
+<tr class="separator:a8b652a7273738e04765b311e3f8cbacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc7fc84b8bace2a54fa83c011fdfaa7"><td class="memItemLeft" align="right" valign="top"><a id="a1bc7fc84b8bace2a54fa83c011fdfaa7" name="a1bc7fc84b8bace2a54fa83c011fdfaa7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RightToLeftDocument</b> (bool rightToLeft)</td></tr>
+<tr class="separator:a1bc7fc84b8bace2a54fa83c011fdfaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa36086a91785b7a6dc9bcb5a1b3e0da8"><td class="memItemLeft" align="right" valign="top"><a id="aa36086a91785b7a6dc9bcb5a1b3e0da8" name="aa36086a91785b7a6dc9bcb5a1b3e0da8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShowBrackets</b> () const</td></tr>
 <tr class="memdesc:aa36086a91785b7a6dc9bcb5a1b3e0da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the cell brackets [displayed left to each group cell showing its extend]? <br /></td></tr>
@@ -657,18 +848,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShowInputLabels</b> (
 <tr class="memitem:af8ea92f0a00f389644e5f72fb4e92923"><td class="memItemLeft" align="right" valign="top"><a id="af8ea92f0a00f389644e5f72fb4e92923" name="af8ea92f0a00f389644e5f72fb4e92923"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowInputLabels</b> (bool show)</td></tr>
 <tr class="separator:af8ea92f0a00f389644e5f72fb4e92923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdbad3df886e380b26e24fd41e611b53"><td class="memItemLeft" align="right" valign="top"><a id="abdbad3df886e380b26e24fd41e611b53" name="abdbad3df886e380b26e24fd41e611b53"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>InvertBackground</b> () const</td></tr>
-<tr class="separator:abdbad3df886e380b26e24fd41e611b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92202f3f9414849e3ba6cc0b9d676149"><td class="memItemLeft" align="right" valign="top"><a id="a92202f3f9414849e3ba6cc0b9d676149" name="a92202f3f9414849e3ba6cc0b9d676149"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InvertBackground</b> (bool invert)</td></tr>
-<tr class="separator:a92202f3f9414849e3ba6cc0b9d676149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab03022772cc6495cd0bc8e4d310c8419"><td class="memItemLeft" align="right" valign="top"><a id="ab03022772cc6495cd0bc8e4d310c8419" name="ab03022772cc6495cd0bc8e4d310c8419"></a>
-long&#160;</td><td class="memItemRight" valign="bottom"><b>UndoLimit</b> ()</td></tr>
-<tr class="separator:ab03022772cc6495cd0bc8e4d310c8419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465d87d4ec52bb63eb304ac482891f95"><td class="memItemLeft" align="right" valign="top"><a id="a465d87d4ec52bb63eb304ac482891f95" name="a465d87d4ec52bb63eb304ac482891f95"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UndoLimit</b> (long limit)</td></tr>
-<tr class="separator:a465d87d4ec52bb63eb304ac482891f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64d2034bc5a37e2db7355bffd00975d"><td class="memItemLeft" align="right" valign="top"><a id="aa64d2034bc5a37e2db7355bffd00975d" name="aa64d2034bc5a37e2db7355bffd00975d"></a>
+<a class="el" href="classConfiguration.html#a0c3c003a32828fe343fb6e3b616a4657">Appearance</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAppearance</b> () const</td></tr>
+<tr class="separator:aa64d2034bc5a37e2db7355bffd00975d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4d75690bfbfdf88e970adc7ef29d0b"><td class="memItemLeft" align="right" valign="top"><a id="a8a4d75690bfbfdf88e970adc7ef29d0b" name="a8a4d75690bfbfdf88e970adc7ef29d0b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAppearance</b> (<a class="el" href="classConfiguration.html#a0c3c003a32828fe343fb6e3b616a4657">Appearance</a> a)</td></tr>
+<tr class="memdesc:a8a4d75690bfbfdf88e970adc7ef29d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose the appearance and update which style set is active. <br /></td></tr>
+<tr class="separator:a8a4d75690bfbfdf88e970adc7ef29d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb3aef43603efa80ad90461cf77e445"><td class="memItemLeft" align="right" valign="top"><a id="a8fb3aef43603efa80ad90461cf77e445" name="a8fb3aef43603efa80ad90461cf77e445"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBackgroundBrush</b> ()</td></tr>
+<tr class="memdesc:a8fb3aef43603efa80ad90461cf77e445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the cached document-background brush from the active style set. <br /></td></tr>
+<tr class="separator:a8fb3aef43603efa80ad90461cf77e445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5159a693ed3f4400443a33ffc482f59d"><td class="memItemLeft" align="right" valign="top"><a id="a5159a693ed3f4400443a33ffc482f59d" name="a5159a693ed3f4400443a33ffc482f59d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>UseDarkMode</b> () const</td></tr>
+<tr class="memdesc:a5159a693ed3f4400443a33ffc482f59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the dark style set is currently active. <br /></td></tr>
+<tr class="separator:a5159a693ed3f4400443a33ffc482f59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa85610428d30d093571398bf7cde017d"><td class="memItemLeft" align="right" valign="top"><a id="aa85610428d30d093571398bf7cde017d" name="aa85610428d30d093571398bf7cde017d"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><b>RecentItems</b> ()</td></tr>
 <tr class="separator:aa85610428d30d093571398bf7cde017d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -784,48 +978,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EnterEvaluates</b> (b
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MathJaXURL</b> (wxString url)</td></tr>
 <tr class="memdesc:a19fa14b5da6db871966920d852f755f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the URL MathJaX can be found at. <br /></td></tr>
 <tr class="separator:a19fa14b5da6db871966920d852f755f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742045f7b06f0e2539ab8ee025b46a0a"><td class="memItemLeft" align="right" valign="top"><a id="a742045f7b06f0e2539ab8ee025b46a0a" name="a742045f7b06f0e2539ab8ee025b46a0a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBitmap</b> () const</td></tr>
-<tr class="separator:a742045f7b06f0e2539ab8ee025b46a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a942dbaf531cb843b99db28a8f6fcefb8"><td class="memItemLeft" align="right" valign="top"><a id="a942dbaf531cb843b99db28a8f6fcefb8" name="a942dbaf531cb843b99db28a8f6fcefb8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBitmap</b> (bool copyBitmap)</td></tr>
-<tr class="separator:a942dbaf531cb843b99db28a8f6fcefb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acee9e3d3388b8c0844971053a422ed85"><td class="memItemLeft" align="right" valign="top"><a id="acee9e3d3388b8c0844971053a422ed85" name="acee9e3d3388b8c0844971053a422ed85"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopyMathML</b> () const</td></tr>
-<tr class="separator:acee9e3d3388b8c0844971053a422ed85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc981d5b4372b9c43debe69199152a3"><td class="memItemLeft" align="right" valign="top"><a id="adbc981d5b4372b9c43debe69199152a3" name="adbc981d5b4372b9c43debe69199152a3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyMathML</b> (bool copyMathML)</td></tr>
-<tr class="separator:adbc981d5b4372b9c43debe69199152a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca8de3768ee791f66d006a0ed18cc46"><td class="memItemLeft" align="right" valign="top"><a id="a8ca8de3768ee791f66d006a0ed18cc46" name="a8ca8de3768ee791f66d006a0ed18cc46"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopyMathMLHTML</b> () const</td></tr>
-<tr class="separator:a8ca8de3768ee791f66d006a0ed18cc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66826204add86e050f8304b01ea29621"><td class="memItemLeft" align="right" valign="top"><a id="a66826204add86e050f8304b01ea29621" name="a66826204add86e050f8304b01ea29621"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyMathMLHTML</b> (bool copyMathMLHTML)</td></tr>
-<tr class="separator:a66826204add86e050f8304b01ea29621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb97e49f00daecd9cb83634cb2be7ec3"><td class="memItemLeft" align="right" valign="top"><a id="abb97e49f00daecd9cb83634cb2be7ec3" name="abb97e49f00daecd9cb83634cb2be7ec3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HideMarkerForThisMessage</b> (wxString message)</td></tr>
 <tr class="separator:abb97e49f00daecd9cb83634cb2be7ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d50ba977ff19ecf53022bd22973f00"><td class="memItemLeft" align="right" valign="top"><a id="a37d50ba977ff19ecf53022bd22973f00" name="a37d50ba977ff19ecf53022bd22973f00"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HideMarkerForThisMessage</b> (const wxString &amp;message, bool hide)</td></tr>
 <tr class="separator:a37d50ba977ff19ecf53022bd22973f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58b6c1335f74b1900e85aef48ca2dc8a"><td class="memItemLeft" align="right" valign="top"><a id="a58b6c1335f74b1900e85aef48ca2dc8a" name="a58b6c1335f74b1900e85aef48ca2dc8a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopyRTF</b> () const</td></tr>
-<tr class="separator:a58b6c1335f74b1900e85aef48ca2dc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b40190202ab80e7efaa877a9367235"><td class="memItemLeft" align="right" valign="top"><a id="a15b40190202ab80e7efaa877a9367235" name="a15b40190202ab80e7efaa877a9367235"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyRTF</b> (bool copyRTF)</td></tr>
-<tr class="separator:a15b40190202ab80e7efaa877a9367235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b75e79d05d662fd79e421fbf7dded6"><td class="memItemLeft" align="right" valign="top"><a id="ab0b75e79d05d662fd79e421fbf7dded6" name="ab0b75e79d05d662fd79e421fbf7dded6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopySVG</b> () const</td></tr>
-<tr class="separator:ab0b75e79d05d662fd79e421fbf7dded6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84305ba5c10974b192e63f29451e6228"><td class="memItemLeft" align="right" valign="top"><a id="a84305ba5c10974b192e63f29451e6228" name="a84305ba5c10974b192e63f29451e6228"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySVG</b> (bool copySVG)</td></tr>
-<tr class="separator:a84305ba5c10974b192e63f29451e6228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94292024fc87feb7ca0b9609f6876e07"><td class="memItemLeft" align="right" valign="top"><a id="a94292024fc87feb7ca0b9609f6876e07" name="a94292024fc87feb7ca0b9609f6876e07"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopyEMF</b> () const</td></tr>
-<tr class="separator:a94292024fc87feb7ca0b9609f6876e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e52877ba91d98e1ecc25a5267cc7f9"><td class="memItemLeft" align="right" valign="top"><a id="ac0e52877ba91d98e1ecc25a5267cc7f9" name="ac0e52877ba91d98e1ecc25a5267cc7f9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyEMF</b> (bool copyEMF)</td></tr>
-<tr class="separator:ac0e52877ba91d98e1ecc25a5267cc7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a531044e1b552fba3e178168afa99d46c"><td class="memItemLeft" align="right" valign="top"><a id="a531044e1b552fba3e178168afa99d46c" name="a531044e1b552fba3e178168afa99d46c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>UseSVG</b> () const</td></tr>
 <tr class="separator:a531044e1b552fba3e178168afa99d46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -866,14 +1024,42 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>UseUnicodeMaths</b> (
 <tr class="memitem:a52eae5b3d909fc63a406c1a6c3c9a59b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStyle.html">Style</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a52eae5b3d909fc63a406c1a6c3c9a59b">GetWritableStyle</a> (<a class="el" href="TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993">TextStyle</a> textStyle)</td></tr>
 <tr class="memdesc:a52eae5b3d909fc63a406c1a6c3c9a59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the text <a class="el" href="classStyle.html" title="Text Style Definition.">Style</a> for a given text style identifier.  <br /></td></tr>
 <tr class="separator:a52eae5b3d909fc63a406c1a6c3c9a59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c3fbc2fbb19d025c061f01d4c4c95ac"><td class="memItemLeft" align="right" valign="top"><a id="a3c3fbc2fbb19d025c061f01d4c4c95ac" name="a3c3fbc2fbb19d025c061f01d4c4c95ac"></a>
-wxWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorkSheet</b> () const</td></tr>
-<tr class="memdesc:a3c3fbc2fbb19d025c061f01d4c4c95ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the worksheet this configuration storage is valid for. <br /></td></tr>
-<tr class="separator:a3c3fbc2fbb19d025c061f01d4c4c95ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a6ee5921186982656d79f99c5a01ad2"><td class="memItemLeft" align="right" valign="top"><a id="a9a6ee5921186982656d79f99c5a01ad2" name="a9a6ee5921186982656d79f99c5a01ad2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorkSheet</b> (wxWindow *workSheet)</td></tr>
-<tr class="memdesc:a9a6ee5921186982656d79f99c5a01ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the worksheet this configuration storage is valid for. <br /></td></tr>
-<tr class="separator:a9a6ee5921186982656d79f99c5a01ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9787eb41e024c2cdd7970ae1e3f2d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwxScrolled.html">wxScrolledCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a9f9787eb41e024c2cdd7970ae1e3f2d9">GetWorkSheet</a> () const</td></tr>
+<tr class="memdesc:a9f9787eb41e024c2cdd7970ae1e3f2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the worksheet canvas this configuration storage is valid for.  <br /></td></tr>
+<tr class="separator:a9f9787eb41e024c2cdd7970ae1e3f2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04e6c20ad07553adda1992e490aa749"><td class="memItemLeft" align="right" valign="top"><a id="af04e6c20ad07553adda1992e490aa749" name="af04e6c20ad07553adda1992e490aa749"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorkSheet</b> (<a class="el" href="classwxScrolled.html">wxScrolledCanvas</a> *workSheet)</td></tr>
+<tr class="memdesc:af04e6c20ad07553adda1992e490aa749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the worksheet canvas this configuration storage is valid for. <br /></td></tr>
+<tr class="separator:af04e6c20ad07553adda1992e490aa749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5073fe626faad977cb95887f34da8bbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDocumentCellPointers.html">DocumentCellPointers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a5073fe626faad977cb95887f34da8bbd">GetDocumentCellPointers</a> () const</td></tr>
+<tr class="memdesc:a5073fe626faad977cb95887f34da8bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registry of special cells (selection, active cell, errors, ...) of this document.  <br /></td></tr>
+<tr class="separator:a5073fe626faad977cb95887f34da8bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71c9e652ee0d4b788900b0159737267"><td class="memItemLeft" align="right" valign="top"><a id="ae71c9e652ee0d4b788900b0159737267" name="ae71c9e652ee0d4b788900b0159737267"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDocumentCellPointers</b> (<a class="el" href="classDocumentCellPointers.html">DocumentCellPointers</a> *p)</td></tr>
+<tr class="memdesc:ae71c9e652ee0d4b788900b0159737267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the document-model half of the cell-pointer registry. <br /></td></tr>
+<tr class="separator:ae71c9e652ee0d4b788900b0159737267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37e02e0e1bfb01fee781db6b84441c9"><td class="memItemLeft" align="right" valign="top"><a id="ac37e02e0e1bfb01fee781db6b84441c9" name="ac37e02e0e1bfb01fee781db6b84441c9"></a>
+<a class="el" href="classViewCellPointers.html">ViewCellPointers</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewCellPointers</b> () const</td></tr>
+<tr class="memdesc:ac37e02e0e1bfb01fee781db6b84441c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transient view-state half of the cell-pointer registry (null if none). <br /></td></tr>
+<tr class="separator:ac37e02e0e1bfb01fee781db6b84441c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135dddfd5306ae55acf50702f373703c"><td class="memItemLeft" align="right" valign="top"><a id="a135dddfd5306ae55acf50702f373703c" name="a135dddfd5306ae55acf50702f373703c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetViewCellPointers</b> (<a class="el" href="classViewCellPointers.html">ViewCellPointers</a> *p)</td></tr>
+<tr class="memdesc:a135dddfd5306ae55acf50702f373703c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the transient view-state half of the cell-pointer registry. <br /></td></tr>
+<tr class="separator:a135dddfd5306ae55acf50702f373703c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b0a3094f44b6d504d24aa0e26ac2fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#af4b0a3094f44b6d504d24aa0e26ac2fd">RequestRecalculate</a> (<a class="el" href="classGroupCell.html">GroupCell</a> *group) const</td></tr>
+<tr class="memdesc:af4b0a3094f44b6d504d24aa0e26ac2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask the view (if any) to recalculate the layout starting at the given group cell.  <br /></td></tr>
+<tr class="separator:af4b0a3094f44b6d504d24aa0e26ac2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7adce7e949fc75ef2e1c8f9e2e6419f"><td class="memItemLeft" align="right" valign="top"><a id="ac7adce7e949fc75ef2e1c8f9e2e6419f" name="ac7adce7e949fc75ef2e1c8f9e2e6419f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRecalculateRequestCallback</b> (std::function&lt; void(<a class="el" href="classGroupCell.html">GroupCell</a> *)&gt; callback)</td></tr>
+<tr class="memdesc:ac7adce7e949fc75ef2e1c8f9e2e6419f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback <a class="el" href="classConfiguration.html#af4b0a3094f44b6d504d24aa0e26ac2fd" title="Ask the view (if any) to recalculate the layout starting at the given group cell.">RequestRecalculate()</a> notifies the view through. <br /></td></tr>
+<tr class="separator:ac7adce7e949fc75ef2e1c8f9e2e6419f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381d3cc5d3720043c2be67719901caaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a381d3cc5d3720043c2be67719901caaf">RequestRecalculateAll</a> () const</td></tr>
+<tr class="memdesc:a381d3cc5d3720043c2be67719901caaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask the view to schedule a recalculation of the WHOLE worksheet.  <br /></td></tr>
+<tr class="separator:a381d3cc5d3720043c2be67719901caaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8152999fb39ae963167ccd072393cace"><td class="memItemLeft" align="right" valign="top"><a id="a8152999fb39ae963167ccd072393cace" name="a8152999fb39ae963167ccd072393cace"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRecalculateAllRequestCallback</b> (std::function&lt; void()&gt; callback)</td></tr>
+<tr class="memdesc:a8152999fb39ae963167ccd072393cace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback <a class="el" href="classConfiguration.html#a381d3cc5d3720043c2be67719901caaf" title="Ask the view to schedule a recalculation of the WHOLE worksheet.">RequestRecalculateAll()</a> / <a class="el" href="classConfiguration.html#a030f46a360020a9351b21e77681b7814" title="Force every cell to be recalculated on the next layout pass.">RecalculateForce()</a> notify through. <br /></td></tr>
+<tr class="separator:a8152999fb39ae963167ccd072393cace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af93df7547990db08cb968122b7109147"><td class="memItemLeft" align="right" valign="top"><a id="af93df7547990db08cb968122b7109147" name="af93df7547990db08cb968122b7109147"></a>
 long&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultPort</b> () const</td></tr>
 <tr class="separator:af93df7547990db08cb968122b7109147"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -905,6 +1091,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>OfferKnownAnswers</b>
 <tr class="memitem:aaee6d5621e66285bcffe717274753b28"><td class="memItemLeft" align="right" valign="top"><a id="aaee6d5621e66285bcffe717274753b28" name="aaee6d5621e66285bcffe717274753b28"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OfferKnownAnswers</b> (bool offerKnownAnswers)</td></tr>
 <tr class="separator:aaee6d5621e66285bcffe717274753b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ceeb2c99fefd71b78a64f479308916"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ac9ceeb2c99fefd71b78a64f479308916">ScreenReaderAnnouncesMathML</a> () const</td></tr>
+<tr class="memdesc:ac9ceeb2c99fefd71b78a64f479308916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Announce maxima's output to screen readers as MathML?  <br /></td></tr>
+<tr class="separator:ac9ceeb2c99fefd71b78a64f479308916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a63d6d22413f60a6b16e8979d5247a"><td class="memItemLeft" align="right" valign="top"><a id="a18a63d6d22413f60a6b16e8979d5247a" name="a18a63d6d22413f60a6b16e8979d5247a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ScreenReaderAnnouncesMathML</b> (bool <a class="el" href="classConfiguration.html#ae285be0c26dbdd7a86eac37c9cebdd7daf0065aa9583aacf0c567a4228a312df7">mathML</a>)</td></tr>
+<tr class="separator:a18a63d6d22413f60a6b16e8979d5247a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af48875fbebf57aec8510050be1c2e452"><td class="memItemLeft" align="right" valign="top"><a id="af48875fbebf57aec8510050be1c2e452" name="af48875fbebf57aec8510050be1c2e452"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>Documentclass</b> () const</td></tr>
 <tr class="separator:af48875fbebf57aec8510050be1c2e452"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1003,12 +1195,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultPlotWidth</b> 
 <tr class="memitem:a8b796ec77e1f2fa7d9f943449a4df546"><td class="memItemLeft" align="right" valign="top"><a id="a8b796ec77e1f2fa7d9f943449a4df546" name="a8b796ec77e1f2fa7d9f943449a4df546"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultPlotWidth</b> () const</td></tr>
 <tr class="separator:a8b796ec77e1f2fa7d9f943449a4df546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac00ff2737fddea66b8ddaad744bc00ae"><td class="memItemLeft" align="right" valign="top"><a id="ac00ff2737fddea66b8ddaad744bc00ae" name="ac00ff2737fddea66b8ddaad744bc00ae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFramerate</b> (int fps)</td></tr>
-<tr class="separator:ac00ff2737fddea66b8ddaad744bc00ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a124e9b2b6304d7b8863004618abb6a7a"><td class="memItemLeft" align="right" valign="top"><a id="a124e9b2b6304d7b8863004618abb6a7a" name="a124e9b2b6304d7b8863004618abb6a7a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFramerate</b> () const</td></tr>
-<tr class="separator:a124e9b2b6304d7b8863004618abb6a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d7dc13bff4047b98c29b607a36dbba"><td class="memItemLeft" align="right" valign="top"><a id="a38d7dc13bff4047b98c29b607a36dbba" name="a38d7dc13bff4047b98c29b607a36dbba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFramerate</b> (double fps)</td></tr>
+<tr class="separator:a38d7dc13bff4047b98c29b607a36dbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0879040780171530fb4b2c3d23b523cd"><td class="memItemLeft" align="right" valign="top"><a id="a0879040780171530fb4b2c3d23b523cd" name="a0879040780171530fb4b2c3d23b523cd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFramerate</b> () const</td></tr>
+<tr class="separator:a0879040780171530fb4b2c3d23b523cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98284b0e247f3ec0c8c3e41ead4a51f"><td class="memItemLeft" align="right" valign="top"><a id="ae98284b0e247f3ec0c8c3e41ead4a51f" name="ae98284b0e247f3ec0c8c3e41ead4a51f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>TocDepth</b> (int depth)</td></tr>
 <tr class="separator:ae98284b0e247f3ec0c8c3e41ead4a51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1027,12 +1219,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>UsePartialForDiff</b>
 <tr class="memitem:aa9a2808e464c9637d37b1024006d5f61"><td class="memItemLeft" align="right" valign="top"><a id="aa9a2808e464c9637d37b1024006d5f61" name="aa9a2808e464c9637d37b1024006d5f61"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UsePartialForDiff</b> (bool usePartialForDiff)</td></tr>
 <tr class="separator:aa9a2808e464c9637d37b1024006d5f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7ec47a15b395381d184d830fb6a16d3"><td class="memItemLeft" align="right" valign="top"><a id="ac7ec47a15b395381d184d830fb6a16d3" name="ac7ec47a15b395381d184d830fb6a16d3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAdjustWorksheetSizeNeeded</b> () const</td></tr>
-<tr class="separator:ac7ec47a15b395381d184d830fb6a16d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab70de6c3d9816e84e5b6971432f9ead8"><td class="memItemLeft" align="right" valign="top"><a id="ab70de6c3d9816e84e5b6971432f9ead8" name="ab70de6c3d9816e84e5b6971432f9ead8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAdjustWorksheetSizeNeeded</b> (bool val)</td></tr>
-<tr class="separator:ab70de6c3d9816e84e5b6971432f9ead8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf0975759fb9a22373b1611989300a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#aacf0975759fb9a22373b1611989300a5">RequestAdjustWorksheetSize</a> () const</td></tr>
+<tr class="memdesc:aacf0975759fb9a22373b1611989300a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask the view (if any) to re-adjust its worksheet (scroll) size.  <br /></td></tr>
+<tr class="separator:aacf0975759fb9a22373b1611989300a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5006b848e1a811173c3f92de8e1d21f"><td class="memItemLeft" align="right" valign="top"><a id="ae5006b848e1a811173c3f92de8e1d21f" name="ae5006b848e1a811173c3f92de8e1d21f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAdjustWorksheetSizeRequestCallback</b> (std::function&lt; void()&gt; callback)</td></tr>
+<tr class="memdesc:ae5006b848e1a811173c3f92de8e1d21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback <a class="el" href="classConfiguration.html#aacf0975759fb9a22373b1611989300a5" title="Ask the view (if any) to re-adjust its worksheet (scroll) size.">RequestAdjustWorksheetSize()</a> notifies the view through. <br /></td></tr>
+<tr class="separator:ae5006b848e1a811173c3f92de8e1d21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad47f83d888f67fc6e303b5c0f6faa7ca"><td class="memItemLeft" align="right" valign="top"><a id="ad47f83d888f67fc6e303b5c0f6faa7ca" name="ad47f83d888f67fc6e303b5c0f6faa7ca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyOfCellRedraw</b> (const <a class="el" href="classCell.html">Cell</a> *cell)</td></tr>
 <tr class="memdesc:ad47f83d888f67fc6e303b5c0f6faa7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record that this cell has been drawn to <a class="el" href="classConfiguration.html#a295a632df3661ad823bd4f8b604e6224" title="Report if a cell has been redrawn 2 or more times during a simple Draw() command.">ReportMultipleRedraws()</a> <br /></td></tr>
@@ -1072,12 +1265,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>LineBreaksInLongNums<
 <tr class="memitem:ab724467ac43c05ada4333872dc5e13d5"><td class="memItemLeft" align="right" valign="top"><a id="ab724467ac43c05ada4333872dc5e13d5" name="ab724467ac43c05ada4333872dc5e13d5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LineBreaksInLongNums</b> (bool brk)</td></tr>
 <tr class="separator:ab724467ac43c05ada4333872dc5e13d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af39a3c1d5f7dbd8f277ffb7ba21e8ad0"><td class="memItemLeft" align="right" valign="top"><a id="af39a3c1d5f7dbd8f277ffb7ba21e8ad0" name="af39a3c1d5f7dbd8f277ffb7ba21e8ad0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxClipbrdBitmapMegabytes</b> () const</td></tr>
-<tr class="separator:af39a3c1d5f7dbd8f277ffb7ba21e8ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28f27771f26b3406a80e9263658314fe"><td class="memItemLeft" align="right" valign="top"><a id="a28f27771f26b3406a80e9263658314fe" name="a28f27771f26b3406a80e9263658314fe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MaxClipbrdBitmapMegabytes</b> (int maxClipbrd_BitmapMegabytes)</td></tr>
-<tr class="separator:a28f27771f26b3406a80e9263658314fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa270344bee906b5efc5d4119e94776ca"><td class="memItemLeft" align="right" valign="top"><a id="aa270344bee906b5efc5d4119e94776ca" name="aa270344bee906b5efc5d4119e94776ca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MaximaUsesHtmlBrowser</b> (bool maximaUsesHhtmlBrowser)</td></tr>
 <tr class="separator:aa270344bee906b5efc5d4119e94776ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1096,6 +1283,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ExportContainsWXMX</b
 <tr class="memitem:a366c01b392e653aa1fa390877f1233ec"><td class="memItemLeft" align="right" valign="top"><a id="a366c01b392e653aa1fa390877f1233ec" name="a366c01b392e653aa1fa390877f1233ec"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExportContainsWXMX</b> () const</td></tr>
 <tr class="separator:a366c01b392e653aa1fa390877f1233ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09614451291eeb82685331e594616a99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a09614451291eeb82685331e594616a99">HTMLExportSelfContained</a> () const</td></tr>
+<tr class="memdesc:a09614451291eeb82685331e594616a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the HTML export produce one self-contained file?  <br /></td></tr>
+<tr class="separator:a09614451291eeb82685331e594616a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb59c04e5161d7adee559e95920d710"><td class="memItemLeft" align="right" valign="top"><a id="a3cb59c04e5161d7adee559e95920d710" name="a3cb59c04e5161d7adee559e95920d710"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HTMLExportSelfContained</b> (bool selfContained)</td></tr>
+<tr class="separator:a3cb59c04e5161d7adee559e95920d710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e4e8c8b39e0281a213b26d9d212dd0"><td class="memItemLeft" align="right" valign="top"><a id="a12e4e8c8b39e0281a213b26d9d212dd0" name="a12e4e8c8b39e0281a213b26d9d212dd0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>WizardTab</b> (long tab)</td></tr>
 <tr class="separator:a12e4e8c8b39e0281a213b26d9d212dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1146,12 +1339,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InitStyles</b> ()</td
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>FontRendersChar</b> (wxUniChar ch, const wxFont &amp;font= *wxNORMAL_FONT)</td></tr>
 <tr class="memdesc:a183cf4ad6d4c8a38f3f1c0b958d8b37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we are confident that the font renders this char. <br /></td></tr>
 <tr class="separator:a183cf4ad6d4c8a38f3f1c0b958d8b37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f1309d98cfa9e61f04e2df54f57b0a"><td class="memItemLeft" align="right" valign="top"><a id="a83f1309d98cfa9e61f04e2df54f57b0a" name="a83f1309d98cfa9e61f04e2df54f57b0a"></a>
-wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>LastActiveTextCtrl</b> () const</td></tr>
-<tr class="separator:a83f1309d98cfa9e61f04e2df54f57b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17bc9b2edb0ef53eee20c5f0617b9b1f"><td class="memItemLeft" align="right" valign="top"><a id="a17bc9b2edb0ef53eee20c5f0617b9b1f" name="a17bc9b2edb0ef53eee20c5f0617b9b1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LastActiveTextCtrl</b> (wxTextCtrl *last)</td></tr>
-<tr class="separator:a17bc9b2edb0ef53eee20c5f0617b9b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a2e8c01c17181f9cc52e1930f299b60"><td class="memItemLeft" align="right" valign="top"><a id="a8a2e8c01c17181f9cc52e1930f299b60" name="a8a2e8c01c17181f9cc52e1930f299b60"></a>
 const std::vector&lt; <a class="el" href="TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993">TextStyle</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCodeStylesList</b> () const</td></tr>
 <tr class="memdesc:a8a2e8c01c17181f9cc52e1930f299b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which styles affect how code is displayed? <br /></td></tr>
@@ -1183,11 +1370,19 @@ maximaHelpFormat&#160;</td><td class="memItemRight" valign="bottom"><b>MaximaHel
 <tr class="memitem:a112547a8de4f9bf7d7d7d9842c4a381d"><td class="memItemLeft" align="right" valign="top"><a id="a112547a8de4f9bf7d7d7d9842c4a381d" name="a112547a8de4f9bf7d7d7d9842c4a381d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MaximaHelpFormat</b> (maximaHelpFormat format)</td></tr>
 <tr class="separator:a112547a8de4f9bf7d7d7d9842c4a381d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923edf9cb3b793c049d2a6577e7aa6d6"><td class="memItemLeft" align="right" valign="top"><a id="a923edf9cb3b793c049d2a6577e7aa6d6" name="a923edf9cb3b793c049d2a6577e7aa6d6"></a>
+std::random_device::result_type&#160;</td><td class="memItemRight" valign="bottom"><b>RandomEntropy</b> ()</td></tr>
+<tr class="memdesc:a923edf9cb3b793c049d2a6577e7aa6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">One sample of OS entropy (std::random_device). <br /></td></tr>
+<tr class="separator:a923edf9cb3b793c049d2a6577e7aa6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd93deb669b7d063dd856ee425803232"><td class="memItemLeft" align="right" valign="top"><a id="abd93deb669b7d063dd856ee425803232" name="abd93deb669b7d063dd856ee425803232"></a>
+std::default_random_engine &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>RandomEngine</b> ()</td></tr>
+<tr class="memdesc:abd93deb669b7d063dd856ee425803232"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pseudo-random engine, e.g. to feed a distribution. <br /></td></tr>
+<tr class="separator:abd93deb669b7d063dd856ee425803232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f215c6fb33a7d594a2212377204370"><td class="memItemLeft" align="right" valign="top">std::int_fast32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a56f215c6fb33a7d594a2212377204370">CellCfgCnt</a> () const</td></tr>
 <tr class="memdesc:a56f215c6fb33a7d594a2212377204370"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classA.html">A</a> counter that increases every time we need to recalculate all worksheet cells.  <br /></td></tr>
 <tr class="separator:a56f215c6fb33a7d594a2212377204370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030f46a360020a9351b21e77681b7814"><td class="memItemLeft" align="right" valign="top"><a id="a030f46a360020a9351b21e77681b7814" name="a030f46a360020a9351b21e77681b7814"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RecalculateForce</b> ()</td></tr>
+<tr class="memitem:a030f46a360020a9351b21e77681b7814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a030f46a360020a9351b21e77681b7814">RecalculateForce</a> ()</td></tr>
+<tr class="memdesc:a030f46a360020a9351b21e77681b7814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force every cell to be recalculated on the next layout pass.  <br /></td></tr>
 <tr class="separator:a030f46a360020a9351b21e77681b7814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -1216,17 +1411,19 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxZoomFa
 static const wxString&#160;</td><td class="memItemRight" valign="bottom"><b>CharsNeedingQuotes</b> ()</td></tr>
 <tr class="memdesc:a8a316674c3d2149c2e0c9aa55f19ca99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of chars we need to escape in maxima. <br /></td></tr>
 <tr class="separator:a8a316674c3d2149c2e0c9aa55f19ca99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ae99402a1ca9528502213714d4f5f2"><td class="memItemLeft" align="right" valign="top"><a id="a84ae99402a1ca9528502213714d4f5f2" name="a84ae99402a1ca9528502213714d4f5f2"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAutoWrapCode</b> ()</td></tr>
-<tr class="memdesc:a84ae99402a1ca9528502213714d4f5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do we want to have automatic line breaks for code cells? <br /></td></tr>
-<tr class="separator:a84ae99402a1ca9528502213714d4f5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb3b736ae43efbed965482e4bbb50fd0"><td class="memItemLeft" align="right" valign="top"><a id="acb3b736ae43efbed965482e4bbb50fd0" name="acb3b736ae43efbed965482e4bbb50fd0"></a>
 static const wxString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetStyleName</b> (<a class="el" href="TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993">TextStyle</a> textStyle)</td></tr>
 <tr class="separator:acb3b736ae43efbed965482e4bbb50fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c02a3cf06a1d52dd15bbba628b0899c"><td class="memItemLeft" align="right" valign="top"><a id="a2c02a3cf06a1d52dd15bbba628b0899c" name="a2c02a3cf06a1d52dd15bbba628b0899c"></a>
-static wxColour&#160;</td><td class="memItemRight" valign="bottom"><b>InvertColour</b> (wxColour col)</td></tr>
-<tr class="memdesc:a2c02a3cf06a1d52dd15bbba628b0899c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts a color: In 2020 wxColor still lacks this functionality. <br /></td></tr>
-<tr class="separator:a2c02a3cf06a1d52dd15bbba628b0899c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e96b60fcbb9d6499ab07a391845717"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; std::pair&lt; <a class="el" href="TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993">TextStyle</a>, wxString &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a72e96b60fcbb9d6499ab07a391845717">StyleConfigKeys</a> ()</td></tr>
+<tr class="memdesc:a72e96b60fcbb9d6499ab07a391845717"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single source of truth mapping each persisted text style to its config-key prefix.  <br /></td></tr>
+<tr class="separator:a72e96b60fcbb9d6499ab07a391845717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6d1a9446076037957651c1c7e7a39e"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; <a class="el" href="structConfiguration_1_1ScalarSetting.html">ScalarSetting</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a2b6d1a9446076037957651c1c7e7a39e">ScalarConfigSettings</a> ()</td></tr>
+<tr class="memdesc:a2b6d1a9446076037957651c1c7e7a39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single source of truth pairing each mechanical scalar setting's config key with the member caching it.  <br /></td></tr>
+<tr class="separator:a2b6d1a9446076037957651c1c7e7a39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2514c55628afd01670a63f6205a5db1c"><td class="memItemLeft" align="right" valign="top"><a id="a2514c55628afd01670a63f6205a5db1c" name="a2514c55628afd01670a63f6205a5db1c"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SystemIsDark</b> ()</td></tr>
+<tr class="memdesc:a2514c55628afd01670a63f6205a5db1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the OS reports a dark appearance (false where wx cannot tell). <br /></td></tr>
+<tr class="separator:a2514c55628afd01670a63f6205a5db1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408780614dd19920537cfdc7310115f2"><td class="memItemLeft" align="right" valign="top"><a id="a408780614dd19920537cfdc7310115f2" name="a408780614dd19920537cfdc7310115f2"></a>
 static wxString&#160;</td><td class="memItemRight" valign="bottom"><b>MaximaDefaultLocation</b> ()</td></tr>
 <tr class="memdesc:a408780614dd19920537cfdc7310115f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The auto-detected maxima location. <br /></td></tr>
@@ -1258,33 +1455,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaximaLang<
 static wxString&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaximaLang</b> ()</td></tr>
 <tr class="separator:a01d1466e475d37cad087d2222628ff60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a4cc5854a61550156bec48716d3590ca6"><td class="memItemLeft" align="right" valign="top"><a id="a4cc5854a61550156bec48716d3590ca6" name="a4cc5854a61550156bec48716d3590ca6"></a>
-StringHash&#160;</td><td class="memItemRight" valign="bottom"><b>m_maximaOperators</b></td></tr>
-<tr class="memdesc:a4cc5854a61550156bec48716d3590ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">All maxima operator names we know. <br /></td></tr>
-<tr class="separator:a4cc5854a61550156bec48716d3590ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7cc5d016e720a60c689580425a59df9"><td class="memItemLeft" align="right" valign="top"><a id="ac7cc5d016e720a60c689580425a59df9" name="ac7cc5d016e720a60c689580425a59df9"></a>
-wxEnvVariableHashMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_maximaEnvVars</b></td></tr>
-<tr class="separator:ac7cc5d016e720a60c689580425a59df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe20fbb21d8625c5d6cbe6617b8477c7"><td class="memItemLeft" align="right" valign="top"><a id="afe20fbb21d8625c5d6cbe6617b8477c7" name="afe20fbb21d8625c5d6cbe6617b8477c7"></a>
-std::vector&lt; <a class="el" href="structConfiguration_1_1CharsExist.html">CharsExist</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_charsInFont</b></td></tr>
-<tr class="separator:afe20fbb21d8625c5d6cbe6617b8477c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c42ffe13fbafe492fe759f36c65ae3e"><td class="memItemLeft" align="right" valign="top"><a id="a0c42ffe13fbafe492fe759f36c65ae3e" name="a0c42ffe13fbafe492fe759f36c65ae3e"></a>
-StringBoolHash&#160;</td><td class="memItemRight" valign="bottom"><b>m_hideMarkerForThisMessage</b></td></tr>
-<tr class="separator:a0c42ffe13fbafe492fe759f36c65ae3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81653dc3bf2b4b4b049dd78a0f1967cb"><td class="memItemLeft" align="right" valign="top"><a id="a81653dc3bf2b4b4b049dd78a0f1967cb" name="a81653dc3bf2b4b4b049dd78a0f1967cb"></a>
-<a class="el" href="classStyle.html">Style</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_styles</b> [<a class="el" href="TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993a4ff5d935a79c3cd0c1e5d3a188645046">NUMBEROFSTYLES</a>]</td></tr>
-<tr class="separator:a81653dc3bf2b4b4b049dd78a0f1967cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5897be9039afeb0aa6e0edb510eafa11"><td class="memItemLeft" align="right" valign="top"><a id="a5897be9039afeb0aa6e0edb510eafa11" name="a5897be9039afeb0aa6e0edb510eafa11"></a>
-std::random_device&#160;</td><td class="memItemRight" valign="bottom"><b>m_rd</b></td></tr>
-<tr class="memdesc:a5897be9039afeb0aa6e0edb510eafa11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our random device. <br /></td></tr>
-<tr class="separator:a5897be9039afeb0aa6e0edb510eafa11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a919b6aa91aefacfbe6aafc806806035e"><td class="memItemLeft" align="right" valign="top"><a id="a919b6aa91aefacfbe6aafc806806035e" name="a919b6aa91aefacfbe6aafc806806035e"></a>
-std::default_random_engine&#160;</td><td class="memItemRight" valign="bottom"><b>m_eng</b></td></tr>
-<tr class="memdesc:a919b6aa91aefacfbe6aafc806806035e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our random engine. <br /></td></tr>
-<tr class="separator:a919b6aa91aefacfbe6aafc806806035e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a3eee9f8af1c849ef1970e0fd56ee8182"><td class="memItemLeft" align="right" valign="top"><a id="a3eee9f8af1c849ef1970e0fd56ee8182" name="a3eee9f8af1c849ef1970e0fd56ee8182"></a>
@@ -1293,10 +1463,6 @@ static <a class="el" href="structConfiguration_1_1PerformanceStats.html">Perform
 <tr class="memitem:ab8f221b042a343fa625bf28c347468e4"><td class="memItemLeft" align="right" valign="top">static wxString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ab8f221b042a343fa625bf28c347468e4">m_configfileLocation_override</a></td></tr>
 <tr class="memdesc:ab8f221b042a343fa625bf28c347468e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where to store the configuration.  <br /></td></tr>
 <tr class="separator:ab8f221b042a343fa625bf28c347468e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57fae948718b8b3a1ef02a21449e3ede"><td class="memItemLeft" align="right" valign="top"><a id="a57fae948718b8b3a1ef02a21449e3ede" name="a57fae948718b8b3a1ef02a21449e3ede"></a>
-static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993">TextStyle</a>, wxString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_styleNames</b></td></tr>
-<tr class="memdesc:a57fae948718b8b3a1ef02a21449e3ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of names for the worksheet's text styles. <br /></td></tr>
-<tr class="separator:a57fae948718b8b3a1ef02a21449e3ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The configuration storage for the current worksheet. </p>
@@ -1323,6 +1489,30 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 </div>
 </div>
+<a id="ae285be0c26dbdd7a86eac37c9cebdd7d" name="ae285be0c26dbdd7a86eac37c9cebdd7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae285be0c26dbdd7a86eac37c9cebdd7d">&#9670;&#160;</a></span>htmlExportFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classConfiguration.html#ae285be0c26dbdd7a86eac37c9cebdd7d">Configuration::htmlExportFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The export formats we support for HTML equations. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae285be0c26dbdd7a86eac37c9cebdd7dad7f872bc1d23183096102bdf6e2e16e5" name="ae285be0c26dbdd7a86eac37c9cebdd7dad7f872bc1d23183096102bdf6e2e16e5"></a>mathJaX_TeX&#160;</td><td class="fielddoc"><p>Deprecated: the TeX-via-MathJaX HTML export was removed. The value is kept so saved configurations migrate to native MathML (see <a class="el" href="Configuration_8cpp.html" title="This file defines the class Configuration which serves as a fast configuration storage.">Configuration.cpp</a>) instead of silently shifting to another format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae285be0c26dbdd7a86eac37c9cebdd7da56aa225dc8c883c72cc5e067b3abdd36" name="ae285be0c26dbdd7a86eac37c9cebdd7da56aa225dc8c883c72cc5e067b3abdd36"></a>mathML_mathJaX&#160;</td><td class="fielddoc"><p>Native MathML, plus MathJaX downloaded as a fall-back only for the few browsers that still lack MathML support. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae285be0c26dbdd7a86eac37c9cebdd7daf0065aa9583aacf0c567a4228a312df7" name="ae285be0c26dbdd7a86eac37c9cebdd7daf0065aa9583aacf0c567a4228a312df7"></a>mathML&#160;</td><td class="fielddoc"><p>Native MathML with no MathJaX at all: the exported page makes no external requests. This is the default. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ac7d8b1beccdf8f887368251c3e6d0d71" name="ac7d8b1beccdf8f887368251c3e6d0d71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7d8b1beccdf8f887368251c3e6d0d71">&#9670;&#160;</a></span>InitOpt</h2>
 
@@ -1336,6 +1526,40 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac7d8b1beccdf8f887368251c3e6d0d71ad2c1b48b8bb593a8ee707eff455cff9d" name="ac7d8b1beccdf8f887368251c3e6d0d71ad2c1b48b8bb593a8ee707eff455cff9d"></a>temporary&#160;</td><td class="fielddoc"><p>This configuration is temporary and shouldn't redetect <a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a> etc. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="adb5fa4e3eacde294a5f23ceca1b9283d" name="adb5fa4e3eacde294a5f23ceca1b9283d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5fa4e3eacde294a5f23ceca1b9283d">&#9670;&#160;</a></span>OversizedMatrices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">Configuration::OversizedMatrices</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How to show a matrix too large for the window. </p>
+<p><a class="el" href="classA.html">A</a> matrix has no sensible linear form to fall back on the way a fraction or a square root does, so the layout strategy above cannot help once one is wider or taller than the window. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adb5fa4e3eacde294a5f23ceca1b9283dac4b292ca33b0a323d3c5096457c19c5a" name="adb5fa4e3eacde294a5f23ceca1b9283dac4b292ca33b0a323d3c5096457c19c5a"></a>showInFull&#160;</td><td class="fielddoc"><p>Draw it whole; the worksheet grows, and scrolls, to fit it. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adb5fa4e3eacde294a5f23ceca1b9283da7414f5aebe77ba706aef391616a0fb18" name="adb5fa4e3eacde294a5f23ceca1b9283da7414f5aebe77ba706aef391616a0fb18"></a>elide&#160;</td><td class="fielddoc"><p>Leave out the middle rows/columns, marking the gap with ⋯ ⋮ ⋱ (the default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adb5fa4e3eacde294a5f23ceca1b9283da089b0cdd8835d09cb1cabf38b3ce9c09" name="adb5fa4e3eacde294a5f23ceca1b9283da089b0cdd8835d09cb1cabf38b3ce9c09"></a>scroll&#160;</td><td class="fielddoc"><p>Show a window-sized part of it, with native scrollbars. </p>
+<p>Only where there is a window to put scrollbars in, i.e. only if <a class="el" href="classConfiguration.html#a74421be4dc53ee0606c3852c8e81d403" title="What gives a scrolling matrix its scrollbars, if anything.">GetMatrixScrollHost()</a> is set. Anywhere else &ndash; printing, a context without a worksheet &ndash; a matrix is elided instead. </p>
 </td></tr>
 </table>
 
@@ -1387,6 +1611,62 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="adcf5ccf815501a086738b0888693ddf7" name="adcf5ccf815501a086738b0888693ddf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf5ccf815501a086738b0888693ddf7">&#9670;&#160;</a></span>AiChatProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Configuration::AiChatProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Which AI provider the AI chat sidebar talks to, as an AiProviderKind cast to int (0 = AiProviderKind::None, i.e. </p>
+<p>not configured/disabled). Stored as a plain int, not the enum itself, so <a class="el" href="Configuration_8h_source.html">Configuration.h</a> doesn't need to include <a class="el" href="AiProvider_8h.html" title="Talks to one of a handful of external AI chat APIs for the AI chat sidebar (AiChatSidebar).">AiProvider.h</a> just for this one field. </p>
+
+</div>
+</div>
+<a id="ae9476f5002dc14dc335da45696d27cc3" name="ae9476f5002dc14dc335da45696d27cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9476f5002dc14dc335da45696d27cc3">&#9670;&#160;</a></span>ArrowKeysSkipOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::ArrowKeysSkipOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Do the Up and Down keys skip over a cell's output? </p>
+<p>Off by default: Down at the end of an input then selects the first result of the cell's output (GH #2382). On restores the older behaviour, where Down went straight on to the next cell and output could only be selected with the mouse. </p>
+
+</div>
+</div>
 <a id="a56f215c6fb33a7d594a2212377204370" name="a56f215c6fb33a7d594a2212377204370"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56f215c6fb33a7d594a2212377204370">&#9670;&#160;</a></span>CellCfgCnt()</h2>
 
@@ -1477,6 +1757,34 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 </div>
 </div>
+<a id="a5073fe626faad977cb95887f34da8bbd" name="a5073fe626faad977cb95887f34da8bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5073fe626faad977cb95887f34da8bbd">&#9670;&#160;</a></span>GetDocumentCellPointers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDocumentCellPointers.html">DocumentCellPointers</a> * Configuration::GetDocumentCellPointers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The registry of special cells (selection, active cell, errors, ...) of this document. </p>
+<p>Cells constructed with this configuration register themselves here. Set by the <a class="el" href="classWorksheet.html" title="The canvas that contains the spreadsheet the whole program is about.">Worksheet</a> that owns the CellPointers object; null for configurations that never construct cells (e.g. the temporary print configuration). The document-model half of the cell-pointer registry (null if none). </p>
+
+</div>
+</div>
 <a id="a1b3bbad38adef0ef4e544ff8b6d76cd9" name="a1b3bbad38adef0ef4e544ff8b6d76cd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b3bbad38adef0ef4e544ff8b6d76cd9">&#9670;&#160;</a></span>GetInterEquationSkip()</h2>
 
@@ -1529,7 +1837,35 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 </div><div class="memdoc">
 
 <p>Get the width of worksheet labels [in unscaled pixels]. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Should the font size be regarded here? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Should the font size be regarded here? </dd></dl>
+
+</div>
+</div>
+<a id="a74421be4dc53ee0606c3852c8e81d403" name="a74421be4dc53ee0606c3852c8e81d403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74421be4dc53ee0606c3852c8e81d403">&#9670;&#160;</a></span>GetMatrixScrollHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMatrixScrollHost.html">MatrixScrollHost</a> * Configuration::GetMatrixScrollHost </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>What gives a scrolling matrix its scrollbars, if anything. </p>
+<p>Set only on the worksheet's own configuration, by the worksheet. It is deliberately not copied by the copy constructor: a copy is made for printing or exporting, and neither has a window to put scrollbars in. </p>
 
 </div>
 </div>
@@ -1615,6 +1951,62 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 </div>
 </div>
+<a id="a9f9787eb41e024c2cdd7970ae1e3f2d9" name="a9f9787eb41e024c2cdd7970ae1e3f2d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9787eb41e024c2cdd7970ae1e3f2d9">&#9670;&#160;</a></span>GetWorkSheet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwxScrolled.html">wxScrolledCanvas</a> * Configuration::GetWorkSheet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the worksheet canvas this configuration storage is valid for. </p>
+<p>Deliberately typed as the generic scrolled-canvas base class: the cells only need window services (DPI, scroll offsets, accessibility parent), never the <a class="el" href="classWorksheet.html" title="The canvas that contains the spreadsheet the whole program is about.">Worksheet</a> class itself. </p>
+
+</div>
+</div>
+<a id="ac3ea385b7a1495cae3da369cd51fffe6" name="ac3ea385b7a1495cae3da369cd51fffe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ea385b7a1495cae3da369cd51fffe6">&#9670;&#160;</a></span>GetWorksheetTopOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Configuration::GetWorksheetTopOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An extra top margin of less than one scroll unit, in px. </p>
+<p>Lets the worksheet keep the cursor still to the pixel when output appended above it pushes it down, although the view can only scroll in whole scroll units - see <a class="el" href="WorksheetSizeMath_8h.html#a1d9718491ad63b3def0ba9ed538f068b" title="Compute the scroll position that keeps a point of the worksheet still on screen.">ComputeScrollCompensation()</a> and <a class="el" href="classWorksheetLayout.html#a8a366c23ec8831c29b851c22de632c33" title="Keep the cursor still on screen across the next layout pass.">WorksheetLayout::ArmScrollCompensation()</a>. Only the worksheet's own configuration ever sets it: it is deliberately not copied by the copy constructor, as neither printing nor an export wants a stray top margin. </p>
+
+</div>
+</div>
 <a id="a52eae5b3d909fc63a406c1a6c3c9a59b" name="a52eae5b3d909fc63a406c1a6c3c9a59b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52eae5b3d909fc63a406c1a6c3c9a59b">&#9670;&#160;</a></span>GetWritableStyle()</h2>
 
@@ -1649,24 +2041,150 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 </div>
 </div>
-<a id="a059f2a73e613927c2367559c2d0f3d93" name="a059f2a73e613927c2367559c2d0f3d93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a059f2a73e613927c2367559c2d0f3d93">&#9670;&#160;</a></span>MakeColorDifferFromBackground()</h2>
+<a id="a09614451291eeb82685331e594616a99" name="a09614451291eeb82685331e594616a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09614451291eeb82685331e594616a99">&#9670;&#160;</a></span>HTMLExportSelfContained()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">wxColor Configuration::MakeColorDifferFromBackground </td>
+          <td class="memname">bool Configuration::HTMLExportSelfContained </td>
           <td>(</td>
-          <td class="paramtype">wxColor&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Does the HTML export produce one self-contained file? </p>
+<p>If true, the stylesheet, every image and (if ExportContainsWXMX()) the .wxmx source are embedded into the .html file as data: URIs, so it can be mailed or uploaded on its own. If false, images and the .wxmx go into a separate &lt;name&gt;_htmlimg directory next to it. </p>
+
+</div>
+</div>
+<a id="abd68586c893e5e2d640d01624e7f9065" name="abd68586c893e5e2d640d01624e7f9065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd68586c893e5e2d640d01624e7f9065">&#9670;&#160;</a></span>MakeTemporary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::MakeTemporary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Make this color differ from the background by a noticeable amount. </p>
-<p>Useful for black/white background theme changes </p>
+<p>Makes this configuration temporary. </p>
+<p><a class="el" href="classA.html">A</a> configuration that isn't temporary writes its settings to the config file when it is destroyed. <a class="el" href="classA.html">A</a> copy made to show something differently from the worksheet &ndash; the <a class="el" href="classMatrixViewer.html" title="A window that shows a matrix the worksheet only shows part of (GH #2344)">MatrixViewer</a>'s, say, which shows every matrix in full and hides all labels &ndash; must never do that, or its settings would silently become the user's. The copy constructor copies this, so a copy of the worksheet's configuration isn't temporary until told. </p>
+
+</div>
+</div>
+<a id="a480cc8fedf36e05a56b6321d2576e001" name="a480cc8fedf36e05a56b6321d2576e001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480cc8fedf36e05a56b6321d2576e001">&#9670;&#160;</a></span>McpServerEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::McpServerEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the MCP (Model Context Protocol) server, exposing the current worksheet's contents (cells, table of contents, watched variables) as read-only context an external AI tool can query over a local HTTP connection? Off by default &ndash; this is an opt-in feature, and the server only ever answers requests, it can never make <a class="el" href="classwxMaxima.html">wxMaxima</a> insert, edit or evaluate anything itself. </p>
+<p>See <a class="el" href="McpServer_8h_source.html">src/mcp/McpServer.h</a>. </p>
+
+</div>
+</div>
+<a id="ab47f0eff43b0d7e3f812f2f2413723ac" name="ab47f0eff43b0d7e3f812f2f2413723ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47f0eff43b0d7e3f812f2f2413723ac">&#9670;&#160;</a></span>OverlayScrollbars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::OverlayScrollbars </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Use GTK's overlay scrollbars on the worksheet? </p>
+<p>Off by default: the fading overlay indicator is a composited window, and while its animation runs (after every pointer or wheel event) GTK repaints the whole worksheet on every animation frame - see <a class="el" href="classWorksheet.html#a31f00c070f65b7afefde35d7d8b04de7" title="Apply the configuration&#39;s OverlayScrollbars() choice to this window.">Worksheet::ApplyOverlayScrollbarsSetting()</a>. Only used on wxGTK. </p>
+
+</div>
+</div>
+<a id="a37a73721fe321f61f0d3154585fee086" name="a37a73721fe321f61f0d3154585fee086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a73721fe321f61f0d3154585fee086">&#9670;&#160;</a></span>OversizedMatricesFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a> Configuration::OversizedMatricesFor </td>
+          <td>(</td>
+          <td class="paramtype">std::optional&lt; <a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a> &gt;&#160;</td>
+          <td class="paramname"><em>requested</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How one specific matrix that is too large for the window is shown. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">requested</td><td>The mode that matrix asked for, if any (see <a class="el" href="classMatrCell.html#affd7f9fc6bb41deac58ca66228625fc6" title="How this matrix wants to be shown if it is too large for the window.">MatrCell::SetOversizedMode()</a>). It wins over the global setting, except where <a class="el" href="classConfiguration.html#a02af890f0125a1ce1c37d71e62e8fd5b" title="Sets how oversized matrices are shown.">SetOversizedMatrices()</a> was told not to allow that.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The result is only what is wanted: whether it is possible is up to the matrix, which still falls back to eliding where there is nowhere to put scrollbars, and to showing a nested matrix in full. </p>
 
 </div>
 </div>
@@ -1691,6 +2209,34 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 </div>
 </div>
+<a id="a030f46a360020a9351b21e77681b7814" name="a030f46a360020a9351b21e77681b7814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030f46a360020a9351b21e77681b7814">&#9670;&#160;</a></span>RecalculateForce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::RecalculateForce </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Force every cell to be recalculated on the next layout pass. </p>
+<p>Bumps the global config counter (so every cell's ConfigChanged() reports dirty) AND notifies the view's layout engine to schedule a whole-document pass - the counter bump alone is invisible to the engine's per-cell dirty tracking, which would leave cells outside a pending bounded range stale. </p>
+
+</div>
+</div>
 <a id="a295a632df3661ad823bd4f8b604e6224" name="a295a632df3661ad823bd4f8b604e6224"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a295a632df3661ad823bd4f8b604e6224">&#9670;&#160;</a></span>ReportMultipleRedraws()</h2>
 
@@ -1708,6 +2254,148 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 <p>Report if a cell has been redrawn 2 or more times during a simple Draw() command. </p>
 <p>Only used in debug mode; If a cell is drawn and then re-drawn in the same draw command this most likely means that a 2D-displayed cell draws its sub-cells, but didn't remove them from the Cell::NextToDraw()-list of cells to draw after this cell has been drawn. </p>
+
+</div>
+</div>
+<a id="aacf0975759fb9a22373b1611989300a5" name="aacf0975759fb9a22373b1611989300a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf0975759fb9a22373b1611989300a5">&#9670;&#160;</a></span>RequestAdjustWorksheetSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::RequestAdjustWorksheetSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ask the view (if any) to re-adjust its worksheet (scroll) size. </p>
+<p><a class="el" href="classA.html">A</a> cell that changed height calls this so the view recomputes its virtual size, without the cell layer depending on the <a class="el" href="classWorksheet.html" title="The canvas that contains the spreadsheet the whole program is about.">Worksheet</a> class. Mirrors <a class="el" href="classConfiguration.html#af4b0a3094f44b6d504d24aa0e26ac2fd" title="Ask the view (if any) to recalculate the layout starting at the given group cell.">RequestRecalculate()</a>; a no-op for configurations without a view (printing, tests). The "needs adjustment" flag itself lives on the <a class="el" href="classWorksheet.html" title="The canvas that contains the spreadsheet the whole program is about.">Worksheet</a>. </p>
+
+</div>
+</div>
+<a id="af4b0a3094f44b6d504d24aa0e26ac2fd" name="af4b0a3094f44b6d504d24aa0e26ac2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b0a3094f44b6d504d24aa0e26ac2fd">&#9670;&#160;</a></span>RequestRecalculate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::RequestRecalculate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGroupCell.html">GroupCell</a> *&#160;</td>
+          <td class="paramname"><em>group</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ask the view (if any) to recalculate the layout starting at the given group cell. </p>
+<p>How <a class="el" href="classGroupCell.html#a4e11bf61fa61bf441d5790c7db5269f0" title="Mark this group as needing a recalculation.">GroupCell::MarkNeedsRecalculate()</a> reaches the view without the cells depending on the <a class="el" href="classWorksheet.html" title="The canvas that contains the spreadsheet the whole program is about.">Worksheet</a> class. <a class="el" href="classA.html">A</a> no-op for configurations without a view (printing, tests). </p>
+
+</div>
+</div>
+<a id="a381d3cc5d3720043c2be67719901caaf" name="a381d3cc5d3720043c2be67719901caaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381d3cc5d3720043c2be67719901caaf">&#9670;&#160;</a></span>RequestRecalculateAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::RequestRecalculateAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ask the view to schedule a recalculation of the WHOLE worksheet. </p>
+<p><a class="el" href="classConfiguration.html#a030f46a360020a9351b21e77681b7814" title="Force every cell to be recalculated on the next layout pass.">RecalculateForce()</a> bumps a global counter that flips every cell's ConfigChanged() dirty at once (see <a class="el" href="classConfiguration.html#a56f215c6fb33a7d594a2212377204370" title="A counter that increases every time we need to recalculate all worksheet cells.">CellCfgCnt()</a>); there is no per-cell notification, so the view's layout engine would not otherwise learn that the cells outside a pending bounded range became dirty. This tells it to lay the whole document out. <a class="el" href="classA.html">A</a> no-op for configurations without a view (printing, tests without a worksheet). </p>
+
+</div>
+</div>
+<a id="a8b652a7273738e04765b311e3f8cbacc" name="a8b652a7273738e04765b311e3f8cbacc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b652a7273738e04765b311e3f8cbacc">&#9670;&#160;</a></span>RightToLeftDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::RightToLeftDocument </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Does the document read right-to-left (Arabic, Hebrew, Persian, Urdu)? </p>
+<p>This is a <em>layout</em> property, deliberately not the drawing context's layout direction. wxWidgets can mirror a window DC for us, but only a window DC: <a class="el" href="classCell.html#ab68d11529549439a5e2e1e2aca1a9d30" title="Pass 3 (Paint): Renders the cell using pre-calculated coordinates.">Cell::Draw</a> is shared with the export and print contexts (<a class="el" href="classBitmapOut.html" title="Renders portions of the work sheet (including 2D maths) as bitmap.">BitmapOut</a>, <a class="el" href="classSvgout.html">Svgout</a>, <a class="el" href="classPrintout.html">Printout</a>), which are never mirrored, so a mirrored screen would mean every drawing primitive needing to know which kind of context it is drawing into. Mirroring where the positions are computed instead keeps the cells ignorant of it and makes right-to-left come out right on paper and in an exported image as well as on screen. The worksheet window therefore stays pinned to left-to-right; see the comment in <a class="el" href="classWorksheet.html" title="The canvas that contains the spreadsheet the whole program is about.">Worksheet</a>'s constructor.</p>
+<p>Maths is <em>not</em> mirrored even here: an equation reads left-to-right in every script. Only the flow of prose and the side that labels and brackets sit on follow this. </p>
+
+</div>
+</div>
+<a id="a2b6d1a9446076037957651c1c7e7a39e" name="a2b6d1a9446076037957651c1c7e7a39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b6d1a9446076037957651c1c7e7a39e">&#9670;&#160;</a></span>ScalarConfigSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="structConfiguration_1_1ScalarSetting.html">Configuration::ScalarSetting</a> &gt; &amp; Configuration::ScalarConfigSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The single source of truth pairing each mechanical scalar setting's config key with the member caching it. </p>
+<p><a class="el" href="classConfiguration.html#ac45a218b4f09c6a4c649e0f875dbbe44" title="Read the config from the wxConfig object.">ReadConfig()</a> and <a class="el" href="classConfiguration.html#a4f7f692a8178c2062765ddafd0fd4782" title="Saves the style settings.">WriteStyles()</a> both iterate this table, so a setting can never be read and written under mismatched keys (which used to cause settings to silently fail to round-trip). Settings whose read or write needs additional logic (value clamping, format migration, the randomized configID) are handled individually instead of being listed here. Persisting a new plain scalar setting is a one-line edit here. </p>
 
 </div>
 </div>
@@ -1729,6 +2417,34 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 <p>Scales a distance [in pixels] according to the zoom factor. </p>
 <p>Is used for displaying/printing/exporting of text/maths. </p>
+
+</div>
+</div>
+<a id="ac9ceeb2c99fefd71b78a64f479308916" name="ac9ceeb2c99fefd71b78a64f479308916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ceeb2c99fefd71b78a64f479308916">&#9670;&#160;</a></span>ScreenReaderAnnouncesMathML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::ScreenReaderAnnouncesMathML </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Announce maxima's output to screen readers as MathML? </p>
+<p>With false (the default) the accessible name of a math cell is its linear maths text (ToString()); with true it is the cell's MathML representation, for screen readers that can speak MathML properly. </p>
 
 </div>
 </div>
@@ -1757,6 +2473,7 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 </div><div class="memdoc">
 
 <p>Sets the auto wrap mode. </p>
+<p>Out-of-range values (including the pre-tri-state legacy value 3 that old configurations persist) are clamped to "text only", so code wrapping is strictly opt-in.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">autoWrap</td><td><ul>
@@ -1800,6 +2517,80 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 </div>
 </div>
+<a id="ae256b00ca5287c4843a49063e2021226" name="ae256b00ca5287c4843a49063e2021226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae256b00ca5287c4843a49063e2021226">&#9670;&#160;</a></span>SetMatrixScrollHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::SetMatrixScrollHost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMatrixScrollHost.html">MatrixScrollHost</a> *&#160;</td>
+          <td class="paramname"><em>host</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the scrollbar host. </p>
+<p>Only the worksheet calls this, as it is constructed and as it is destroyed. It deliberately doesn't force a recalculation, as the other layout-affecting setters do: that would call back into a worksheet that is either not constructed yet or already being torn down. </p>
+
+</div>
+</div>
+<a id="a02af890f0125a1ce1c37d71e62e8fd5b" name="a02af890f0125a1ce1c37d71e62e8fd5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02af890f0125a1ce1c37d71e62e8fd5b">&#9670;&#160;</a></span>SetOversizedMatrices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::SetOversizedMatrices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>perMatrixOverridable</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets how oversized matrices are shown. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>How a matrix too large for the window is shown. </td></tr>
+    <tr><td class="paramname">perMatrixOverridable</td><td>Whether a matrix may ask for a different mode of its own (wx_matrix()'s oversized option, see <a class="el" href="classConfiguration.html#a37a73721fe321f61f0d3154585fee086" title="How one specific matrix that is too large for the window is shown.">OversizedMatricesFor()</a>). The worksheet and printing allow that; the graphical exporters don't, since they must never drop entries from their output whatever a matrix asked for on screen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3fa0f73520c7f84e872fa0839e89fe06" name="a3fa0f73520c7f84e872fa0839e89fe06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3fa0f73520c7f84e872fa0839e89fe06">&#9670;&#160;</a></span>SetPrinting()</h2>
 
@@ -1821,6 +2612,36 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 </div>
 </div>
+<a id="a87b494d70699a11e13a693c356e1d169" name="a87b494d70699a11e13a693c356e1d169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b494d70699a11e13a693c356e1d169">&#9670;&#160;</a></span>SetWorksheetTopOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::SetWorksheetTopOffset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the extra top margin. </p>
+<p>See <a class="el" href="classConfiguration.html#ac3ea385b7a1495cae3da369cd51fffe6" title="An extra top margin of less than one scroll unit, in px.">GetWorksheetTopOffset()</a>.</p>
+<p>Like <a class="el" href="classConfiguration.html#ae256b00ca5287c4843a49063e2021226" title="Sets the scrollbar host.">SetMatrixScrollHost()</a> this doesn't request a recalculation: the only caller repositions the cells itself. </p>
+
+</div>
+</div>
 <a id="aa31d227e93f75089755000f984ce50c4" name="aa31d227e93f75089755000f984ce50c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa31d227e93f75089755000f984ce50c4">&#9670;&#160;</a></span>SetZoomFactor()</h2>
 
@@ -1839,6 +2660,34 @@ static std::unordered_map&lt; <a class="el" href="TextStyle_8h.html#a68ac52da612
 
 <p>Sets the zoom factor the worksheet is displayed at. </p>
 <p><a class="el" href="classA.html">A</a> comparison operator for wxImage. </p>
+
+</div>
+</div>
+<a id="a72e96b60fcbb9d6499ab07a391845717" name="a72e96b60fcbb9d6499ab07a391845717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e96b60fcbb9d6499ab07a391845717">&#9670;&#160;</a></span>StyleConfigKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::pair&lt; <a class="el" href="TextStyle_8h.html#a68ac52da6129614b3fa14e7c828c1993">TextStyle</a>, wxString &gt; &gt; &amp; Configuration::StyleConfigKeys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The single source of truth mapping each persisted text style to its config-key prefix. </p>
+<p><a class="el" href="classConfiguration.html#ae213e1200fd1ed659c4890d33d282b32" title="Reads the style settings.">ReadStyles()</a> and <a class="el" href="classConfiguration.html#a4f7f692a8178c2062765ddafd0fd4782" title="Saves the style settings.">WriteStyles()</a> both iterate this list, so a style can never be read and written under mismatched keys (which used to cause settings to silently fail to round-trip). Adding a persisted style is a one-line edit here. </p>
 
 </div>
 </div>
