@@ -924,52 +924,52 @@ Can I make &lt;em&gt;wxMaxima&lt;/em&gt; output both image files and embedded pl
 <div class="line">pngdraw2d(&quot;Test&quot;,</div>
 <div class="line">        explicit(sin(x),x,1,10)</div>
 <div class="line">);</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md370"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md369"></a>
 Can I set the aspect ratio of an embedded plot?</h2>
 <p>Utilisez la variable <code>wxplot_size</code> :</p>
 <div class="fragment"><div class="line">wxdraw2d(</div>
 <div class="line">    explicit(sin(x),x,1,10)</div>
 <div class="line">),wxplot_size=[1000,1000];</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md371"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md370"></a>
 After upgrading to MacOS 13.1 plot and/or draw commands output error messages like</h2>
 <div class="fragment"><div class="line">1 HIToolbox 0x00007ff80cd91726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102</div>
 <div class="line">2 HIToolbox 0x00007ff80cd912b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52</div>
 <div class="line">3 HIToolbox 0x00007ff80cd35908 SetMenuBarObscured + 408</div>
 <div class="line">...</div>
 </div><!-- fragment --><p>This might be an issue with the operating system. Disable the hiding of the menu bar (SystemSettings =&gt; Desktop &amp; Dock =&gt; Menu Bar) might solve the issue. See <a href="https://github.com/wxMaxima-developers/wxmaxima/issues/1746">wxMaxima issue #1746</a> for more information.</p>
-<h2><a class="anchor" id="autotoc_md372"></a>
+<h2><a class="anchor" id="autotoc_md371"></a>
 Logging</h2>
 <p>Log messages might be helpful to debug problems. WxMaxima can log many events. Most log entries will be helpful for developers, especially in case of problems or bugs. If you run a "Release"-Build, the log windows is not shown by default, if you run a development version, it is shown by default as a second window. You can enable and disable this window using the "View-&gt;Toggle log window" menu entry.</p>
 <p>Les messages ne sont pas « perdus » si la fenêtre du journal n’est pas affichée. Si vous choisissez d’afficher la fenêtre du journal plus tard, vous verrez les anciens messages du journal (à condition de ne pas les avoir effacés).</p>
 <p>Ces messages peuvent être utiles lorsque vous créez des rapports de bogues (ou que vous essayez de résoudre un bogue par vous-même).</p>
 <p>Les messages du journal peuvent également être envoyés vers STDERR en utilisant l’option de ligne de commande « &ndash;logtostderr ». Sous Windows, une console texte distincte sera ouverte, car une application graphique Windows n’a pas de flux d’entrée/sortie standard connecté.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md373"></a>
+<h1><a class="anchor" id="autotoc_md372"></a>
 FAQ</h1>
-<h2><a class="anchor" id="autotoc_md374"></a>
+<h2><a class="anchor" id="autotoc_md373"></a>
 Is there a way to make more text fit on a LaTeX page?</h2>
 <p>Oui. Utilisez le <a href="https://ctan.org/pkg/geometry">package LaTeX "geometry"</a> pour définir la taille des marges.</p>
 <p>You can add the following line to the LaTeX preamble (for example by using the respective field in the config dialogue ("Export"-&gt;"Additional lines for the TeX preamble"), to set borders of 1cm):</p>
 <div class="fragment"><div class="line">\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md375"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md374"></a>
 Is there a dark mode?</h2>
 <p>Si wxWidgets est suffisamment récent, <em><a class="el" href="classwxMaxima.html">wxMaxima</a></em> passera automatiquement en mode sombre si le système d'exploitation l'est également. Par défaut, la feuille de travail a un fond clair, mais cela peut être personnalisé. Sinon, il existe une option 'Affichage/Inverser la luminosité de la feuille' qui permet de basculer rapidement entre un fond clair et un fond sombre.</p>
-<h2><a class="anchor" id="autotoc_md376"></a>
+<h2><a class="anchor" id="autotoc_md375"></a>
 &lt;em&gt;WxMaxima&lt;/em&gt; sometimes hangs for several seconds once in the first minute</h2>
 <p><em>WxMaxima</em> delegates some big tasks like parsing <em>Maxima_’s &gt;1000-page-manual to background tasks, which normally goes totally unnoticed. At the moment the result of such a task is needed, though, it is possible that _wxMaxima</em> needs to wait a couple of seconds before it can continue its work.</p>
-<h2><a class="anchor" id="autotoc_md377"></a>
+<h2><a class="anchor" id="autotoc_md376"></a>
 Especially when testing new locale settings, a message box "locale ’xx_YY’ can not be set" occurs</h2>
 <p><img src="./locale-warning.png" alt="Avertissement sur la langue locale" class="inline"/></p>
 <p>(The same problem can occur with other applications too). The translations seem okay after you click on ’OK’. WxMaxima does not only use its own translations but the translations of the wxWidgets framework too.</p>
 <p>Ces langues locales peuvent ne pas être présentes dans le système. Sur les systèmes Ubuntu/Debian, elles peuvent être générées avec : <code>dpkg-reconfigure locales</code></p>
-<h2><a class="anchor" id="autotoc_md378"></a>
+<h2><a class="anchor" id="autotoc_md377"></a>
 How can I use symbols for real numbers, natural numbers (ℝ, ℕ), etc.?</h2>
 <p>You can find these symbols in the Unicode sidebar (search for ’double-struck capital’). But the selected font must also support these symbols. If they do not display properly, select another font.</p>
-<h2><a class="anchor" id="autotoc_md379"></a>
+<h2><a class="anchor" id="autotoc_md378"></a>
 How can a Maxima script determine, if it is running under wxMaxima or command line Maxima?</h2>
 <p>Si <a class="el" href="classwxMaxima.html">wxMaxima</a> est utilisé, la variable <a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a> <code>maxima_frontend</code> est définie sur <code>wxmaxima</code>. Dans ce cas, la variable <a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a> <code>maxima_frontend_version</code> contient la version de <a class="el" href="classwxMaxima.html">wxMaxima</a>.</p>
 <p>Si aucun programme pour le frontend n'est utilisé (si vous utilisez <a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a> en ligne de commande), ces variables valent <code>false</code>.</p>
-<h3><a class="anchor" id="autotoc_md380"></a>
+<h3><a class="anchor" id="autotoc_md379"></a>
 Is wxMaxima new enough for this worksheet?</h3>
 <div id="wx_version_min"></div><p><code>wx_version_min("26.09.0")</code> returns <code>true</code> if the running <em><a class="el" href="classwxMaxima.html">wxMaxima</a></em> is at least version 26.09.0, and <code>false</code> if it is older, or if the command runs in command line <em><a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a></em>. The parts of the version number are compared as numbers, so 26.10.0 counts as newer than 26.9.0, and a part that is left out counts as 0: <code>wx_version_min("26.9")</code> is the same as <code>wx_version_min("26.09.0")</code>. <a class="el" href="classA.html">A</a> development version counts as the version it will be released as.</p>
 <p><em><a class="el" href="classwxMaxima.html">wxMaxima</a></em> 26.08.0 and older don't know <code>wx_version_min()</code> yet. There, as with any function <em><a class="el" href="classMaxima.html" title="Interface to the Maxima process.">Maxima</a></em> doesn't know, the call isn't an error: it just returns itself, unevaluated, as <code>wx_version_min("26.09.0")</code>, which is neither <code>true</code> nor <code>false</code>. So a plain <code>if wx_version_min("26.09.0") then ...</code> stays unevaluated on these versions, too. <a class="el" href="classA.html">A</a> worksheet that has to work with them as well can compare the result with <code>true</code>, which gives <code>false</code> there:</p>
@@ -977,11 +977,11 @@ Is wxMaxima new enough for this worksheet?</h3>
 <div class="line">    wx_matrix(M, oversized=scroll)</div>
 <div class="line">else</div>
 <div class="line">    M;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md381"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md380"></a>
 Help! I can not save my document!</h2>
 <p>If saving as wxmx file does not work, try saving the document as wxm file (and vice versa). And you can also try to remove all output (Menu Cell-&gt;Remove all output) and save that file, maybe some unexpected output causes issues during the save process.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md382"></a>
+<h1><a class="anchor" id="autotoc_md381"></a>
 Command-line arguments</h1>
 <p>Généralement, les programmes dotés d'une interface graphique se lancent simplement en cliquant sur une icône ou une entrée de menu. WxMaxima, lorsqu'il est démarré depuis la ligne de commande, accepte néanmoins certains arguments.</p>
 <ul>
@@ -1003,7 +1003,7 @@ Command-line arguments</h1>
 </ul>
 <p>Certains systèmes d'exploitation peuvent utiliser un tiret long (—) au lieu d'un tiret court (-) devant les options en ligne de commande.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md383"></a>
+<h1><a class="anchor" id="autotoc_md382"></a>
 About the program, contributing to wxMaxima</h1>
 <p><a class="el" href="classwxMaxima.html">wxMaxima</a> est principalement développé en C++ avec le framework <a href="https://www.wxwidgets.org">wxWidgets</a>, et utilise <a href="https://www.cmake.org">CMake</a> comme système de build. Une petite partie est écrite en Lisp. Si vous maîtrisez ces langages et souhaitez contribuer à ce projet open source, vous pouvez rejoindre l’équipe sur <a href="https://github.com/wxMaxima-developers/wxmaxima">GitHub</a>.</p>
 <p>Mais les programmeurs ne sont pas les seul·es à pouvoir contribuer ! Vous pouvez aussi aider à améliorer <a class="el" href="classwxMaxima.html">wxMaxima</a> en améliorant la documentation, en signalant (ou corrigeant) des bugs, en proposant de nouvelles fonctionnalités, en traduisant l’interface ou le manuel dans votre langue (consultez le fichier README.md dans le <a href="https://github.com/wxMaxima-developers/wxmaxima/tree/main/locales">dossier locales</a> pour savoir comment procéder).</p>

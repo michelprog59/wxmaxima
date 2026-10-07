@@ -158,6 +158,12 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:adb5fa4e3eacde294a5f23ceca1b9283d"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to show a matrix too large for the window.  <a href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">More...</a><br /></td></tr>
 <tr class="separator:adb5fa4e3eacde294a5f23ceca1b9283d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698f3aab8c09db7093154b1c8b18b60b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a698f3aab8c09db7093154b1c8b18b60b">ImageBackdrop</a> { <a class="el" href="classConfiguration.html#a698f3aab8c09db7093154b1c8b18b60ba334c4a4c42fdb79d7ebc3e73b517e6f8">none</a> = 0
+, <a class="el" href="classConfiguration.html#a698f3aab8c09db7093154b1c8b18b60bafefc45f7d85f6aab9a48c73a49ed66dd">onDarkBackground</a> = 1
+, <a class="el" href="classConfiguration.html#a698f3aab8c09db7093154b1c8b18b60baf9f90eeaf400d228facde6bc48da5cfb">always</a> = 2
+ }</td></tr>
+<tr class="memdesc:a698f3aab8c09db7093154b1c8b18b60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">What is drawn behind the transparent parts of an image (GH #2227)  <a href="classConfiguration.html#a698f3aab8c09db7093154b1c8b18b60b">More...</a><br /></td></tr>
+<tr class="separator:a698f3aab8c09db7093154b1c8b18b60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c3c003a32828fe343fb6e3b616a4657"><td class="memItemLeft" align="right" valign="top"><a id="a0c3c003a32828fe343fb6e3b616a4657" name="a0c3c003a32828fe343fb6e3b616a4657"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a0c3c003a32828fe343fb6e3b616a4657">Appearance</a> { <b>light</b>
 , <b>dark</b>
 , <b>followSystem</b>
@@ -420,6 +426,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLayoutStrategy</b>
 <tr class="memitem:a37a73721fe321f61f0d3154585fee086"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a37a73721fe321f61f0d3154585fee086">OversizedMatricesFor</a> (std::optional&lt; <a class="el" href="classConfiguration.html#adb5fa4e3eacde294a5f23ceca1b9283d">OversizedMatrices</a> &gt; requested) const</td></tr>
 <tr class="memdesc:a37a73721fe321f61f0d3154585fee086"><td class="mdescLeft">&#160;</td><td class="mdescRight">How one specific matrix that is too large for the window is shown.  <br /></td></tr>
 <tr class="separator:a37a73721fe321f61f0d3154585fee086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bbc66ee464b3d879f18661235a19ca"><td class="memItemLeft" align="right" valign="top"><a id="ab2bbc66ee464b3d879f18661235a19ca" name="ab2bbc66ee464b3d879f18661235a19ca"></a>
+<a class="el" href="classConfiguration.html#a698f3aab8c09db7093154b1c8b18b60b">ImageBackdrop</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageBackdrop</b> () const</td></tr>
+<tr class="separator:ab2bbc66ee464b3d879f18661235a19ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acf7d0d01c75f63c7a256c60976cba0"><td class="memItemLeft" align="right" valign="top"><a id="a4acf7d0d01c75f63c7a256c60976cba0" name="a4acf7d0d01c75f63c7a256c60976cba0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageBackdrop</b> (<a class="el" href="classConfiguration.html#a698f3aab8c09db7093154b1c8b18b60b">ImageBackdrop</a> mode)</td></tr>
+<tr class="separator:a4acf7d0d01c75f63c7a256c60976cba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0789a3bc397639739cf6d9f48a2861"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a2c0789a3bc397639739cf6d9f48a2861">DrawImageBackdrop</a> ()</td></tr>
+<tr class="memdesc:a2c0789a3bc397639739cf6d9f48a2861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether images are to be drawn on the TS_IMAGE_BACKDROP colour right now.  <br /></td></tr>
+<tr class="separator:a2c0789a3bc397639739cf6d9f48a2861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74421be4dc53ee0606c3852c8e81d403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrixScrollHost.html">MatrixScrollHost</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#a74421be4dc53ee0606c3852c8e81d403">GetMatrixScrollHost</a> () const</td></tr>
 <tr class="memdesc:a74421be4dc53ee0606c3852c8e81d403"><td class="mdescLeft">&#160;</td><td class="mdescRight">What gives a scrolling matrix its scrollbars, if anything.  <br /></td></tr>
 <tr class="separator:a74421be4dc53ee0606c3852c8e81d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -675,44 +690,44 @@ wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyAnthropic
 <tr class="memdesc:af0536a35baa199414549091c19c2f009"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user's API key for each provider, kept separate so switching providers in Options doesn't lose the others. Stored in the OS secret store (<a class="el" href="classAiProvider.html#a5b1e24c3ee7a6d408fdb13442f84ab06" title="Saves (or, for an empty key, deletes) an API key for service – a stable identifier: AiProviderKindNam...">AiProvider::SaveApiKey()</a>/LoadApiKey()), never in plain Configuration/wxConfig &ndash; defined out-of-line in <a class="el" href="Configuration_8cpp.html" title="This file defines the class Configuration which serves as a fast configuration storage.">Configuration.cpp</a> specifically so this header doesn't need to include <a class="el" href="AiProvider_8h.html" title="Talks to one of a handful of external AI chat APIs for the AI chat sidebar (AiChatSidebar).">ai/AiProvider.h</a> just for these four accessors. The whole AI Chat feature is hidden (see <a class="el" href="classAiProvider.html#af1e55c3b86011c3b0f8f1e84f437286e" title="True if this build of wxWidgets has a working wxSecretStore backend (&gt;= 3.1.1, compiled with wxUSE_SE...">AiProvider::SecretStoreAvailable()</a>) on a build/system where no secret store is actually available, so these are never called in a way that would need a plain-text fallback. <br /></td></tr>
 <tr class="separator:af0536a35baa199414549091c19c2f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab798da11330aefb228f060556244d018"><td class="memItemLeft" align="right" valign="top"><a id="ab798da11330aefb228f060556244d018" name="ab798da11330aefb228f060556244d018"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyAnthropic</b> (const wxString &amp;key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyAnthropic</b> (const wxString &amp;<a class="el" href="ToolBarSections_8cpp.html#ae9babfa19ef17d110412cb778d8ee389">key</a>)</td></tr>
 <tr class="separator:ab798da11330aefb228f060556244d018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb5c8ceab85af427088abad3aab64e33"><td class="memItemLeft" align="right" valign="top"><a id="afb5c8ceab85af427088abad3aab64e33" name="afb5c8ceab85af427088abad3aab64e33"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenAI</b> () const</td></tr>
 <tr class="separator:afb5c8ceab85af427088abad3aab64e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad12edba0fc01160d1bbd68117a486f40"><td class="memItemLeft" align="right" valign="top"><a id="ad12edba0fc01160d1bbd68117a486f40" name="ad12edba0fc01160d1bbd68117a486f40"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenAI</b> (const wxString &amp;key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenAI</b> (const wxString &amp;<a class="el" href="ToolBarSections_8cpp.html#ae9babfa19ef17d110412cb778d8ee389">key</a>)</td></tr>
 <tr class="separator:ad12edba0fc01160d1bbd68117a486f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf4d5f8cd4e35cc32c7a88624053d753"><td class="memItemLeft" align="right" valign="top"><a id="abf4d5f8cd4e35cc32c7a88624053d753" name="abf4d5f8cd4e35cc32c7a88624053d753"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGoogle</b> () const</td></tr>
 <tr class="separator:abf4d5f8cd4e35cc32c7a88624053d753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a820dfb03fb7e0788fe2d18485edf7e5c"><td class="memItemLeft" align="right" valign="top"><a id="a820dfb03fb7e0788fe2d18485edf7e5c" name="a820dfb03fb7e0788fe2d18485edf7e5c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGoogle</b> (const wxString &amp;key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGoogle</b> (const wxString &amp;<a class="el" href="ToolBarSections_8cpp.html#ae9babfa19ef17d110412cb778d8ee389">key</a>)</td></tr>
 <tr class="separator:a820dfb03fb7e0788fe2d18485edf7e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fd709457ca4b67fe3a881f7d2fe2b26"><td class="memItemLeft" align="right" valign="top"><a id="a7fd709457ca4b67fe3a881f7d2fe2b26" name="a7fd709457ca4b67fe3a881f7d2fe2b26"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyQwen</b> () const</td></tr>
 <tr class="separator:a7fd709457ca4b67fe3a881f7d2fe2b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ca5f84ce8726146c44987bec81a7be"><td class="memItemLeft" align="right" valign="top"><a id="a39ca5f84ce8726146c44987bec81a7be" name="a39ca5f84ce8726146c44987bec81a7be"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyQwen</b> (const wxString &amp;key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyQwen</b> (const wxString &amp;<a class="el" href="ToolBarSections_8cpp.html#ae9babfa19ef17d110412cb778d8ee389">key</a>)</td></tr>
 <tr class="separator:a39ca5f84ce8726146c44987bec81a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b47e1cae145c13c667d099e304e9ce"><td class="memItemLeft" align="right" valign="top"><a id="a69b47e1cae145c13c667d099e304e9ce" name="a69b47e1cae145c13c667d099e304e9ce"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGitHubModels</b> () const</td></tr>
 <tr class="memdesc:a69b47e1cae145c13c667d099e304e9ce"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classA.html">A</a> GitHub personal access token (fine-grained, "Models: read" permission) &ndash; see AiProviderKind::GitHubModels's own doc comment for why this is GitHub's official Models API, not Copilot Chat. <br /></td></tr>
 <tr class="separator:a69b47e1cae145c13c667d099e304e9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05b96a988363df7f1ea45bf3ee3e050"><td class="memItemLeft" align="right" valign="top"><a id="ac05b96a988363df7f1ea45bf3ee3e050" name="ac05b96a988363df7f1ea45bf3ee3e050"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGitHubModels</b> (const wxString &amp;key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyGitHubModels</b> (const wxString &amp;<a class="el" href="ToolBarSections_8cpp.html#ae9babfa19ef17d110412cb778d8ee389">key</a>)</td></tr>
 <tr class="separator:ac05b96a988363df7f1ea45bf3ee3e050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1875868fdf565dda934e5db012cde517"><td class="memItemLeft" align="right" valign="top"><a id="a1875868fdf565dda934e5db012cde517" name="a1875868fdf565dda934e5db012cde517"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyDeepSeek</b> () const</td></tr>
 <tr class="separator:a1875868fdf565dda934e5db012cde517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf15054d9d7c23e7981ade783397365e"><td class="memItemLeft" align="right" valign="top"><a id="adf15054d9d7c23e7981ade783397365e" name="adf15054d9d7c23e7981ade783397365e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyDeepSeek</b> (const wxString &amp;key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyDeepSeek</b> (const wxString &amp;<a class="el" href="ToolBarSections_8cpp.html#ae9babfa19ef17d110412cb778d8ee389">key</a>)</td></tr>
 <tr class="separator:adf15054d9d7c23e7981ade783397365e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0af0aaf5a6571eebbbf56151e39017ef"><td class="memItemLeft" align="right" valign="top"><a id="a0af0aaf5a6571eebbbf56151e39017ef" name="a0af0aaf5a6571eebbbf56151e39017ef"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenRouter</b> () const</td></tr>
 <tr class="separator:a0af0aaf5a6571eebbbf56151e39017ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab383b9e95ca382aeb001835ba28d8081"><td class="memItemLeft" align="right" valign="top"><a id="ab383b9e95ca382aeb001835ba28d8081" name="ab383b9e95ca382aeb001835ba28d8081"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenRouter</b> (const wxString &amp;key)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AiApiKeyOpenRouter</b> (const wxString &amp;<a class="el" href="ToolBarSections_8cpp.html#ae9babfa19ef17d110412cb778d8ee389">key</a>)</td></tr>
 <tr class="separator:ab383b9e95ca382aeb001835ba28d8081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ab3a52c59a511ce06026ae05e4dd5af"><td class="memItemLeft" align="right" valign="top"><a id="a2ab3a52c59a511ce06026ae05e4dd5af" name="a2ab3a52c59a511ce06026ae05e4dd5af"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>AiModelAnthropic</b> () const</td></tr>
@@ -1046,7 +1061,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDocumentCellPointe
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetViewCellPointers</b> (<a class="el" href="classViewCellPointers.html">ViewCellPointers</a> *p)</td></tr>
 <tr class="memdesc:a135dddfd5306ae55acf50702f373703c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the transient view-state half of the cell-pointer registry. <br /></td></tr>
 <tr class="separator:a135dddfd5306ae55acf50702f373703c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b0a3094f44b6d504d24aa0e26ac2fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#af4b0a3094f44b6d504d24aa0e26ac2fd">RequestRecalculate</a> (<a class="el" href="classGroupCell.html">GroupCell</a> *group) const</td></tr>
+<tr class="memitem:af4b0a3094f44b6d504d24aa0e26ac2fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#af4b0a3094f44b6d504d24aa0e26ac2fd">RequestRecalculate</a> (<a class="el" href="classGroupCell.html">GroupCell</a> *<a class="el" href="ToolBarSections_8cpp.html#a0242027ec3331f3d5793c42d21b6f4e1">group</a>) const</td></tr>
 <tr class="memdesc:af4b0a3094f44b6d504d24aa0e26ac2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask the view (if any) to recalculate the layout starting at the given group cell.  <br /></td></tr>
 <tr class="separator:af4b0a3094f44b6d504d24aa0e26ac2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7adce7e949fc75ef2e1c8f9e2e6419f"><td class="memItemLeft" align="right" valign="top"><a id="ac7adce7e949fc75ef2e1c8f9e2e6419f" name="ac7adce7e949fc75ef2e1c8f9e2e6419f"></a>
@@ -1265,6 +1280,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>LineBreaksInLongNums<
 <tr class="memitem:ab724467ac43c05ada4333872dc5e13d5"><td class="memItemLeft" align="right" valign="top"><a id="ab724467ac43c05ada4333872dc5e13d5" name="ab724467ac43c05ada4333872dc5e13d5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LineBreaksInLongNums</b> (bool brk)</td></tr>
 <tr class="separator:ab724467ac43c05ada4333872dc5e13d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34bf94cb8e69a7700c7b95d63b3a981"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#aa34bf94cb8e69a7700c7b95d63b3a981">DigitGrouping</a> () const</td></tr>
+<tr class="memdesc:aa34bf94cb8e69a7700c7b95d63b3a981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Separate the digit groups of long numbers by a small gap? (GH #192)  <br /></td></tr>
+<tr class="separator:aa34bf94cb8e69a7700c7b95d63b3a981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ff24aa909d6b7f0f56980a62d90e38"><td class="memItemLeft" align="right" valign="top"><a id="a42ff24aa909d6b7f0f56980a62d90e38" name="a42ff24aa909d6b7f0f56980a62d90e38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DigitGrouping</b> (bool <a class="el" href="ToolBarSections_8cpp.html#a0242027ec3331f3d5793c42d21b6f4e1">group</a>)</td></tr>
+<tr class="separator:a42ff24aa909d6b7f0f56980a62d90e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c5433508423d0a63a537f28a6f5344"><td class="memItemLeft" align="right" valign="top"><a id="a54c5433508423d0a63a537f28a6f5344" name="a54c5433508423d0a63a537f28a6f5344"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>DigitGroupingMinDigits</b> () const</td></tr>
+<tr class="memdesc:a54c5433508423d0a63a537f28a6f5344"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many digits a number needs before <a class="el" href="classConfiguration.html#aa34bf94cb8e69a7700c7b95d63b3a981" title="Separate the digit groups of long numbers by a small gap? (GH #192)">DigitGrouping()</a> groups them. <br /></td></tr>
+<tr class="separator:a54c5433508423d0a63a537f28a6f5344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79751ef669acaceb4d895983a37cb54b"><td class="memItemLeft" align="right" valign="top"><a id="a79751ef669acaceb4d895983a37cb54b" name="a79751ef669acaceb4d895983a37cb54b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DigitGroupingMinDigits</b> (long digits)</td></tr>
+<tr class="separator:a79751ef669acaceb4d895983a37cb54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa270344bee906b5efc5d4119e94776ca"><td class="memItemLeft" align="right" valign="top"><a id="aa270344bee906b5efc5d4119e94776ca" name="aa270344bee906b5efc5d4119e94776ca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MaximaUsesHtmlBrowser</b> (bool maximaUsesHhtmlBrowser)</td></tr>
 <tr class="separator:aa270344bee906b5efc5d4119e94776ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1388,7 +1416,7 @@ std::default_random_engine &amp;&#160;</td><td class="memItemRight" valign="bott
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a33c31133e51e360dadbf6e9bb2f31f0b"><td class="memItemLeft" align="right" valign="top"><a id="a33c31133e51e360dadbf6e9bb2f31f0b" name="a33c31133e51e360dadbf6e9bb2f31f0b"></a>
-static const wxString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEscCode</b> (const wxString &amp;key)</td></tr>
+static const wxString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEscCode</b> (const wxString &amp;<a class="el" href="ToolBarSections_8cpp.html#ae9babfa19ef17d110412cb778d8ee389">key</a>)</td></tr>
 <tr class="memdesc:a33c31133e51e360dadbf6e9bb2f31f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a symbol for the escape codes that can be typed after hitting the Escape key in the worksheet. <br /></td></tr>
 <tr class="separator:a33c31133e51e360dadbf6e9bb2f31f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a91c07eed224ef2eee334a54f6a4828"><td class="memItemLeft" align="right" valign="top"><a id="a3a91c07eed224ef2eee334a54f6a4828" name="a3a91c07eed224ef2eee334a54f6a4828"></a>
@@ -1463,6 +1491,10 @@ static <a class="el" href="structConfiguration_1_1PerformanceStats.html">Perform
 <tr class="memitem:ab8f221b042a343fa625bf28c347468e4"><td class="memItemLeft" align="right" valign="top">static wxString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfiguration.html#ab8f221b042a343fa625bf28c347468e4">m_configfileLocation_override</a></td></tr>
 <tr class="memdesc:ab8f221b042a343fa625bf28c347468e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where to store the configuration.  <br /></td></tr>
 <tr class="separator:ab8f221b042a343fa625bf28c347468e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a29d9014b9bfe1631fa3b5c5ee92e10"><td class="memItemLeft" align="right" valign="top"><a id="a4a29d9014b9bfe1631fa3b5c5ee92e10" name="a4a29d9014b9bfe1631fa3b5c5ee92e10"></a>
+static constexpr long&#160;</td><td class="memItemRight" valign="bottom"><b>DigitGroupingMinDigits_Min</b> = 2</td></tr>
+<tr class="memdesc:a4a29d9014b9bfe1631fa3b5c5ee92e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The smallest value <a class="el" href="classConfiguration.html#a54c5433508423d0a63a537f28a6f5344" title="How many digits a number needs before DigitGrouping() groups them.">DigitGroupingMinDigits()</a> accepts: 1 digit has no groups. <br /></td></tr>
+<tr class="separator:a4a29d9014b9bfe1631fa3b5c5ee92e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The configuration storage for the current worksheet. </p>
@@ -1508,6 +1540,39 @@ static <a class="el" href="structConfiguration_1_1PerformanceStats.html">Perform
 <tr><td class="fieldname"><a id="ae285be0c26dbdd7a86eac37c9cebdd7da56aa225dc8c883c72cc5e067b3abdd36" name="ae285be0c26dbdd7a86eac37c9cebdd7da56aa225dc8c883c72cc5e067b3abdd36"></a>mathML_mathJaX&#160;</td><td class="fielddoc"><p>Native MathML, plus MathJaX downloaded as a fall-back only for the few browsers that still lack MathML support. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae285be0c26dbdd7a86eac37c9cebdd7daf0065aa9583aacf0c567a4228a312df7" name="ae285be0c26dbdd7a86eac37c9cebdd7daf0065aa9583aacf0c567a4228a312df7"></a>mathML&#160;</td><td class="fielddoc"><p>Native MathML with no MathJaX at all: the exported page makes no external requests. This is the default. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a698f3aab8c09db7093154b1c8b18b60b" name="a698f3aab8c09db7093154b1c8b18b60b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698f3aab8c09db7093154b1c8b18b60b">&#9670;&#160;</a></span>ImageBackdrop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classConfiguration.html#a698f3aab8c09db7093154b1c8b18b60b">Configuration::ImageBackdrop</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>What is drawn behind the transparent parts of an image (GH #2227) </p>
+<p>Images are usually made for paper, i.e. for a white background: black line art on a transparent background disappears on a dark worksheet. The backdrop's colour is the TS_IMAGE_BACKDROP style. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a698f3aab8c09db7093154b1c8b18b60ba334c4a4c42fdb79d7ebc3e73b517e6f8" name="a698f3aab8c09db7093154b1c8b18b60ba334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"><p>Nothing: the worksheet shows through. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a698f3aab8c09db7093154b1c8b18b60bafefc45f7d85f6aab9a48c73a49ed66dd" name="a698f3aab8c09db7093154b1c8b18b60bafefc45f7d85f6aab9a48c73a49ed66dd"></a>onDarkBackground&#160;</td><td class="fielddoc"><p>The backdrop colour, but only if the worksheet's background is dark (the default) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a698f3aab8c09db7093154b1c8b18b60baf9f90eeaf400d228facde6bc48da5cfb" name="a698f3aab8c09db7093154b1c8b18b60baf9f90eeaf400d228facde6bc48da5cfb"></a>always&#160;</td><td class="fielddoc"><p>Always the backdrop colour. </p>
 </td></tr>
 </table>
 
@@ -1692,6 +1757,62 @@ static <a class="el" href="structConfiguration_1_1PerformanceStats.html">Perform
 
 <p><a class="el" href="classA.html">A</a> counter that increases every time we need to recalculate all worksheet cells. </p>
 <p>If that counter eventually wraps that should be fine: The cells will have been recalculated before that and if someone trying to do a speed run with <a class="el" href="classwxMaxima.html">wxMaxima</a> manages to accumulate billions of config changes before the worksheet manages to recalculate itself the worst thing that can happen is a visual glitch. </p>
+
+</div>
+</div>
+<a id="aa34bf94cb8e69a7700c7b95d63b3a981" name="aa34bf94cb8e69a7700c7b95d63b3a981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34bf94cb8e69a7700c7b95d63b3a981">&#9670;&#160;</a></span>DigitGrouping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::DigitGrouping </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Separate the digit groups of long numbers by a small gap? (GH #192) </p>
+<p>Only affects how numbers are drawn, never their text: see <a class="el" href="DigitGrouping_8h.html" title="Declares where a number gets the small gaps that separate its digit groups (GH #192),...">DigitGrouping.h</a>. </p>
+
+</div>
+</div>
+<a id="a2c0789a3bc397639739cf6d9f48a2861" name="a2c0789a3bc397639739cf6d9f48a2861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0789a3bc397639739cf6d9f48a2861">&#9670;&#160;</a></span>DrawImageBackdrop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::DrawImageBackdrop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether images are to be drawn on the TS_IMAGE_BACKDROP colour right now. </p>
+<p><a class="el" href="classPrinting.html" title="Sets the configuration&#39;s &quot;printing&quot; flag until this class is left.">Printing</a> never needs the "dark background" variant: paper is white. </p>
 
 </div>
 </div>
